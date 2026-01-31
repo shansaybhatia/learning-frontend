@@ -21,16 +21,20 @@ This repository serves as both a learning log and a reference.
 ---
 
 ## Repository Structure
+
+```
 learning-frontend/
 │
 ├── html/
-│ ├── basics/
-│ └── projects/college-website
-│ 
-├── css/ (planned)
+│   ├── basics/
+│   └── projects/
+│       └── college-website/
+│
+├── css/        (planned)
 ├── javascript/ (planned)
 │
 └── README.md
+```
 
 
 ---
