@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearningHTML</title>
+
+    <style>
+        table th,
+        td {
+            border: 1px solid red;
+            border-collapse: collapse;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- This is a comment and it will not be displayed in the browser. -->
+    <h1>Hello World</h1>
+    <h2>This is index.html</h2>
+    <p><a href="https://www.google.com/">Go to google</a></p>
+    <!-- absolute link -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cumque doloremque ea omnis natus. Possimus rem
+        delectus sit molestias ea.
+    </p>
+    <a href="/Table.html">Connecting my other HTML files</a>
+    <br />
+    <img src="resources/google.png" alt="google Logo" width="500" />
+    <!-- Relative url or Relative Path -->
+    <br />
+
+    <b>Bold Text</b>
+    <i>Italic Text</i>
+    <u>Underline Text</u>
+    <br />
+
+    <!-- <big>Big Text</big>  Not supported (Css Preferred) -->
+    <hr />
+    <small>Small Text</small>
+    <br />
+
+    <p>H<sub>2</sub>O</p>
+    <p>E = mc<sup>2</sup></p>
+
+    <pre>
+    This is     preformatted text.
+    It preserves both spaces
+    and line breaks.
+  </pre>
+
+    <header>
+        <pre>
+    <p>Education      Projects</p>
+  </pre>
+    </header>
+    <main>
+        <h1>My Portfolio</h1>
+        <section>Experience</section>
+        <section>Education</section>
+        <section>Projects</section>
+
+        <article>My Story: Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam repellat perspiciatis
+            consequatur vitae similique in reprehenderit eos sequi,placeat blanditiis.</article>
+
+        <aside>This is an Add</aside>
+
+        <a href="https://google.com" target="_main"> <img src="resources/google.png" alt="Google" height="100"></a>
+        <!-- to make the link open is another tab or clickable image -->
+
+        <div>
+            <p>Hello</p>
+            <p>Namaste</p>
+            <p>Hola!</p>
+        </div>
+        <div>
+            <p>Byee</p>
+            <p>Ciao</p>
+        </div>
+        <span>Goodbyee!</span>
+
+        <ul type="square">
+            <li>Apple</li>
+            <ul>
+                <li>Color: Red</li>
+                <li>Season: Winters</li>
+            </ul>
+            <li>Mango</li>
+            <ul>
+                <li>Color: Yellow</li>
+                <li>Season: Summers</li>
+            </ul>
+            <li>Banana</li>
+        </ul>
+        <ol type="i">
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+    </main>
+    <h1>Hello from Shansay Bhatia</h1>
+
+    <table>
+        <caption>Student info</caption>
+        <thead>
+            <tr>
+                <th>S.NO</th>
+                <th>Name</th>
+                <th>Sem</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Shansay</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Vidit</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">End of the table</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <td colspan="2">Person</th>
+                <td colspan="2">Department</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td rowspan="4">Photo</td>
+                <td>Name</td>
+                <td rowspan="2">Image</td>
+            </tr>
+            <tr>
+                <td>Surname</td>
+                <td>Structure</td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td>Floor</td>
+                <td rowspan="2">QR</td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>room</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Person</td>
+                <td colspan="2">Department</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+
+    <table>
+        <tr>
+            <td rowspan="2">a</td>
+            <td>b</td>
+            <td rowspan="3">c</td>
+            <td colspan="2">d</td>
+            <td>e</td>
+        </tr>
+        <tr>
+            <td>f</td>
+            <td rowspan="2">g</td>
+            <td rowspan="2">h</td>
+            <td rowspan="2">i</td>
+        </tr>
+        <tr>
+            <td colspan="2">j</td>
+        </tr>
+        <tr>
+            <td colspan="3">k</td>
+            <td>l</td>
+            <td colspan="2">m</td>
+        </tr>
+    </table>
+
+    <table border="2">
+        <caption>Student Data</caption>
+        <thead>
+            <tr>
+                <th colspan="2">Information</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Shansay Bhatia</td>
+                <td>590011437</td>
+            </tr>
+            <tr>
+                <td>Vidit Raturi</td>
+                <td>590012151</td>
+            </tr>
+        <tfoot>
+            <tr>
+                <td colspan="2">End of the Table</td>
+            </tr>
+        </tfoot>
+        </tbody>
+    </table>
+
+    <br>
+    <h4>Regestration Form</h4>
+    <form action="/action.php">
+        <input type="text" placeholder="Username">
+        <br>
+        <input type="password" placeholder="password">
+        <br><br>
+        Select Your Class:
+        <br>
+        <label for="X">
+            <input type="radio" name="class" id="X" value="X">Class X
+        </label>
+        <br>
+        <label for="XII">
+            <input type="radio" name="class" id="XII" value="XII">Class XII
+        </label>
+        <br><br>
+        <div id="1" class="group1">
+            Blue House Students
+        </div>
+        <div id="2" class="group2">
+            Red House Students
+        </div>
+        <!-- Classes and Groups -->
+        <br>
+        Select Your Subjects:
+        <br>
+        <label for="Math">
+            <input type="checkbox" name="Subject" value="Math" id="1">Math
+        </label>
+        <label for="Physics">
+            <input type="checkbox" name="Subject" value="Physics" id="2">Physics
+        </label>
+        <label for="Chemistry">
+            <input type="checkbox" name="Subject" value="Chemistry" id="3">Chemistry
+        </label>
+        <label for="English">
+            <input type="checkbox" name="Subject" value="English" id="4">English
+        </label>
+        <br><br>
+        Select Your City:
+        <br>
+        <select name="City" id="7">
+            <option value="Delhi">Delhi</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Banglore">Banglore</option>
+        </select>
+
+        <br><br>
+        <textarea name="Feedback" id="5" placeholder="Please! Give your valuable feedback here "
+            rows="5">Feedback</textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=e79_kxWFsdstRfVr"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- table>thead>tr>th*5
+table>tr*6>td*6
+form>label+input:text*3
+ul>li*10
+section>article>h2+p*3 -->
+    <br>
+
+    <h3><abbr title="Cascading Style Sheets">Css</abbr></h3>
+
+
+    <!-- # used for id , . used for class -->
+
+    <footer>
+        <pre>Contact me:
+  Email: Tetser@gmail.com
+  Mobile No.: +91 9876543210
+    </pre>
+    </footer>
+
+</body>
+
+</html>
