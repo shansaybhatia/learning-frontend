@@ -1,0 +1,56 @@
+/* universal selector */
+* {
+  background-color: #f5f5dc;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  /* border: 2px solid black; */
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: rgb(255, 100, 200);
+}
+/* 
+    Hex-Codes
+    #FFFFFF  OR #FFF (white)
+    #000000 OR #000 (black)
+    #FF0000 OR #F00 (red)
+    #00FF00 OR #0F0 (green)
+    #0000FF OR #00F (blue) 
+
+    hsl (hue, saturation , light)
+
+    coolors.co (for color pallets and contrast checker)
+ */
+main {
+  color: #112a46;
+}
+
+#main {
+  color: rgba(0, 0, 255, 0.581);
+}
+
+.gray {
+  color: gray;
+}
+
+#second {
+  font-style: italic;
+}
+
+.yellow {
+  color: #004200;
+}
+
+h1,
+h2 {
+  color: black;
+}
+
+.highlight {
+  text-transform: uppercase;
+  background-color: gold;
+}
