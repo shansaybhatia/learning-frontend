@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*External css fonts are added using @import rule. It is used to import fonts from external sources like Google Fonts. The syntax is @import url('font-url');. In this example, we are importing the Roboto font from Google Fonts.*/
+
+/* Typography is the way text is arranged and {presented} styled on a webpage. It includes things like font choice, size, line height, and spacing. Good typography can make your content easier to read and more visually appealing. */
+
+body {
+  padding: 10%;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* input, button{
+    font-size: inherit;
+} */
+
+p {
+  /* text-decoration: line-through;
+    text-decoration: underline;
+    text-decoration: overline; */
+
+  /* text-transform: capitalize;
+    text-transform: uppercase;
+    text-transform: lowercase; */
+
+  /* text-align: left;
+  text-align: center;
+  text-align: right;
+   */
+
+  text-align: justify;
+  /* text-indent: 5em; */
+
+  line-height: 1.5;
+  /* letter-spacing: 0.1em; */
+  /* word-spacing: 1em; */
+
+  font-weight: normal;
+  /* font-style: oblique; */
+}
