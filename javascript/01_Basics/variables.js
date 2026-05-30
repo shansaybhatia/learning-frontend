@@ -18,3 +18,9 @@ console.log(accCity);
 
 console.table([accId, accMail, accPassword, accCity, accountState]);
 //[] and {} are used to create arrays and objects respectively. In this case, we are creating an array with the values of accId, accMail, accPassword, and accCity and then displaying it in a table format in the console.
+
+console.log(typeof accId); //number
+console.log(typeof accMail); //string
+console.log(typeof accPassword); //string
+console.log(typeof accCity); //string
+console.log(typeof accountState); //undefined
