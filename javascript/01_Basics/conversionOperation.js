@@ -13,7 +13,7 @@ console.log(valueString); // The String() function converts the value of score t
 
 let num1 = 10;
 let num2 = "20";
-let sum = num1 + num2; // This will result in string concatenation, not numeric addition, because num2 is a string.
+let sum = num1 + num2; // This will result in string concatenation, not numeric addition, because num2 is a string. {implicit type coercion}
 console.log(sum); // Output: "1020"
 let num3 = 10;
 let num4 = "20";
@@ -67,3 +67,29 @@ console.log(typeof score2);
 let valueScore2 = Number(score2);
 console.log(typeof valueScore2);
 console.log(valueScore2); // Output: NaN (undefined cannot be converted to a number, resulting in NaN)
+
+//**********************************OPERATIONS****************************************************
+
+let value = 3;
+let negValue = -value;
+console.log(negValue); // Output: -3 (the unary negation operator converts the positive number 3 to its negative counterpart -3)
+
+let str1 = "Hello";
+let str2 = "World";
+let concatenatedStr = str1 + " " + str2;
+console.log(concatenatedStr); // Output: "Hello World" (the + operator concatenates the two strings with a space in between)
+
+console.log(2 + 1 + "3"); // Output: "33" (the + operator first adds the numbers 2 and 1 to get 3, and then concatenates it with the string "3", resulting in "33") The order of operations matters here, as the addition of numbers happens before the concatenation with the string. ECMAScript follows left-to-right evaluation, so the operations are performed in the order they appear.
+
+console.log(+true); // Output: 1 (the unary plus operator converts the boolean value true to the number 1, while false would be converted to 0)
+console.log(+""); // Output: 0 (the unary plus operator converts the empty string "" to the number 0, as empty strings are considered falsy in JavaScript)
+
+let gameCounter = 10;
+const maxScore = gameCounter++; // This assigns the current value of gameCounter (which is 10) to maxScore, and then increments gameCounter to 11. So, maxScore will be 10 and gameCounter will be 11 after this operation.
+console.log(maxScore); // Output: 10
+gameCounter++; // This is the post-increment operator, which increments the value of gameCounter by 1 after its current value is used. So, gameCounter will be 11 after this operation.
+console.log(gameCounter); // Output: 11
+const newMaxScore = ++gameCounter; // This is the pre-increment operator, which increments the value of gameCounter by 1 before its current value is used. So, gameCounter will be 12 after this operation, and newMaxScore will also be 12.
+console.log(newMaxScore); // Output: 12
+++gameCounter; // This is the pre-increment operator, which increments the value of gameCounter by 1 before its current value is used. So, gameCounter will be 12 after this operation.
+console.log(gameCounter); // Output: 12
