@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* block level elements take width of their parent
+we cant apply width or margin or height to inline elements
+but we can apply padding  and it overlaps the content
+we can use inline-block element and use width and height and margin and padding to it
+margin-inline is used to give margin to left and right of the element
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* main{
+    background-color: gold;
+    width: 50%;
+} */
+
+/* p{
+    background-color: lightgray;
+}
+
+.opposite{
+    display: inline-block;
+    background-color: #333;
+    color: whitesmoke;
+    margin-top: 100px;
+    padding: 4rem;
+    height: 100px;
+} */
+
+ul {
+  list-style: none;
+  padding: 0.5rem;
+  text-align: right;
+  background-color: #000;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  margin-inline: 1rem;
+}
+
+li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+li a:hover,
+li a:focus {
+  text-decoration: underline;
+  color: gold;
+}
