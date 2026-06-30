@@ -1,7 +1,6 @@
 # learning-frontend
-My frontend learning journey --- starting with HTML basics and an HTML-only projects.
 
-# Frontend Learning Journey
+My frontend learning journey --- starting with HTML basics and an HTML-only projects.
 
 This repository documents my structured journey into **Frontend Development**.
 It begins with **HTML fundamentals** and will progressively expand to include **CSS** and **JavaScript** as I advance.
@@ -11,6 +10,7 @@ It begins with **HTML fundamentals** and will progressively expand to include **
 ## Purpose
 
 The goal of this repository is to:
+
 - Build strong frontend fundamentals
 - Practice writing clean, readable code
 - Track learning progress over time
@@ -20,30 +20,11 @@ This repository serves as both a learning log and a reference.
 
 ---
 
-## Repository Structure
-
-```
-learning-frontend/
-│
-├── html/
-│   ├── basics/
-│   └── projects/
-│       └── college-website/
-│
-├── css/        (planned)
-├── javascript/ (planned)
-│
-└── README.md
-```
-
-
----
-
 ## Current Progress
 
-- HTML fundamentals — Completed  
-- CSS styling — Planned  
-- JavaScript fundamentals — Planned  
+- HTML fundamentals — Completed
+- CSS styling — in progress
+- JavaScript fundamentals — in progress
 
 ---
 
@@ -63,6 +44,7 @@ learning-frontend/
 ### College Website (HTML Only)
 
 A multi-page college website built using **only HTML**, focusing on:
+
 - Semantic structure
 - Clear navigation
 - Proper content hierarchy
@@ -70,16 +52,6 @@ A multi-page college website built using **only HTML**, focusing on:
 
 Project location:
 html/projects/college-website/
-
-
----
-
-## Future Roadmap
-
-- Add CSS styling and responsive layouts
-- Introduce JavaScript for interactivity
-- Build independent frontend projects
-- Separate completed projects into individual repositories
 
 ---
 

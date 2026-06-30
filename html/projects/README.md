@@ -1,8 +1,8 @@
 # HTML Projects
 
-This directory contains multiple projects built using **HTML only** as part of my frontend learning journey.
+This directory contains a project {College-website} built using **HTML only** as part of my frontend learning journey.
 
-Each project in this folder focuses on practicing core HTML concepts, including structure, semantics, navigation, and file organization, without relying on CSS or JavaScript.
+The project in this folder focuses on practicing core HTML concepts, including structure, semantics, navigation, and file organization, without relying on CSS or JavaScript.
 
 ---
 
@@ -24,7 +24,6 @@ Each project is stored in its own folder and may include:
 - One or more HTML pages
 - Internal navigation between pages
 - Forms, tables, and structured content
-- A dedicated README explaining the project goals
 
 ---
 
