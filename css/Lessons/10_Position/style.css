@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/*
+Static position is default position for all 
+absolute position change its posistion relative to its closest parent 
+relative position changes relative to its parent
+fixed position will move out of the flow of the page but it never moves from it's poistion even when we scroll and has fixed position
+z-index can be used to change order or priority
+sticky position used to stick the element within its container
+{also if we want to make anything invisible while keeping it part of the document we make its position absolute and move it out of the page.}
+*/
+
+body {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  min-height: 200vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.outer-container {
+  border: 3px dashed black;
+  width: 75vw;
+  height: 85vh;
+  margin: 40px auto;
+  position: relative;
+}
+
+.inner-container {
+  border: 3px solid blue;
+  width: 40vw;
+  height: 50vh;
+  margin: 200px auto;
+  /* position: relative; */
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  color: white;
+  padding: 1rem;
+}
+
+.Absolute {
+  background-color: gold;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.Relative {
+  background-color: red;
+  position: relative;
+  top: 343px;
+  left: 250px;
+}
+
+.Fixed {
+  background-color: green;
+  position: fixed;
+  top: 93px;
+}
+
+.Sticky {
+  background-color: blue;
+  position: sticky;
+  top: 0;
+}
