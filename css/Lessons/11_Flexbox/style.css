@@ -2,8 +2,8 @@
 /* 
 justify-content: space-evenly{Even gaps between and end of the div}, space-around{Uneven spaces between div at end}, space-between{for no spaces at end and even spaces between div}
 flex-wrap: wrap used to prevent overflow of content
-align-items: for columns
-align-content: for rows
+align-items: for columns{vertically}
+justify-content: for rows{horizontally}
 flex: grow shrink basis
 order: 0 for in place, 1 for end and -1 for beginning
 */
