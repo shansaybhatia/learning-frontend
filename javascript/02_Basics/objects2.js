@@ -52,3 +52,24 @@ console.log(Users[1].email);
 console.log(Object.keys(user)); // Gives array as a data type
 console.log(Object.values(user));
 console.log(Object.entries(user)); // Gives array of key:value pair in array
+
+const course = {
+  courseName: "JavaScript",
+  price: "699",
+  courseInstructor: "Shansay",
+};
+
+const { courseInstructor } = course;
+console.log(courseInstructor);
+
+//Json...
+// const navbar = ({ company }) => {};
+// navbar((company = "Shansay"));
+
+// {
+//   "name": "Shansay",
+//   "courseName": "JavaScript",
+//   "price": "599"
+// }
+
+// [{}, {}, {}];
