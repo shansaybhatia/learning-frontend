@@ -26,3 +26,33 @@ function loginUser(username) {
 console.log(loginUser()); //undefined
 console.log(loginUser("Shansay"));
 
+function calculateCartPrice(val1, ...val2) {
+  //rest operator in function
+  return val2;
+}
+
+console.log(calculateCartPrice(21, 142, 2413, 1214));
+
+const item = {
+  name: "Apple",
+  price: 199,
+};
+
+function handleObject(anyObject) {
+  console.log(
+    `Item name is ${anyObject.name} and it's price is ${anyObject.price}`,
+  );
+}
+
+handleObject(item);
+
+handleObject({
+  name: "Banana",
+  price: 60,
+});
+
+const myArr = [1, 2, 3, 4, 5];
+function getSecondValue(getArr) {
+  return getArr[1];
+}
+console.log(getSecondValue(myArr));
