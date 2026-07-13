@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Utility Class */
+.nowrap {
+  white-space: nowrap;
+}
+
+/* General Styles  */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font:
+    1.5rem "Nunito",
+    sans-serif;
+  min-height: 100vh;
+  background-color: #475569;
+  background-image: radial-gradient(whitesmoke, #475569);
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  position: sticky;
+  background-color: #1e293b;
+  color: whitesmoke;
+  text-align: center;
+  z-index: 1;
+}
+
+header {
+  top: 0;
+}
+
+footer {
+  bottom: 0;
+}
+
+nav {
+  background-color: white;
+  padding: 0.5rem;
+  border: 2px solid black;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* any-link pseudo class cover all links */
+nav a:any-link {
+  color: black;
+}
+
+/* is pseudo class: it also adopts the specifity while {where} pseudo class has no specificity*/
+nav:is(a:hover, a:focus) {
+  color: hsla(0, 0%, 20%, 0.6);
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+
+/*  Profile Card  */
+
+.card {
+  scroll-margin-top: 8rem;
+  width: min(100%, 350px);
+  background-color: #cbd5e1;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Target psuedo class uses whoever is selected or the current target gets the following properties */
+.card:target {
+  border: 2px solid rebeccapurple;
+}
+
+.card figure {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.card img {
+  border: 5px double #333;
+  border-radius: 50%;
+}
+
+/* Not pseudo class {to check whatever you select does not specify */
+.card img:not([alt]) {
+  border: 2px solid beige;
+}
+
+/* nth-child psuedo class [to check the nth element in this case nth card] */
+.card:nth-child(even) {
+  background-color: papayawhip;
+}
+
+.card figcaption {
+  font-weight: bolder;
+  font-size: 2rem;
+  margin: 0.7rem;
+  text-align: center;
+}
+
+/* pseudo elements */
+.card figcaption::after {
+  content: "💫";
+}
+
+.card figcaption::first-line{
+  font-size: 3rem;
+}
+
+.card p {
+  position: relative;
+}
+.card p::after {
+  content: close-quote;
+  font-size: 3em;
+  position: absolute;
+  top: -0.25em;
+  right: -0.5em;
+}
+
+.card p::before {
+  content: open-quote;
+  font-size: 3em;
+  position: absolute;
+  top: -0.25em;
+  left: -0.5em;
+}
+
+@media screen and (min-width: 576px) {
+  main {
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 1rem;
+  }
+  .card {
+    width: min(100%, 400px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: none;
+  }
+  .card {
+    width: min(100%, 325px);
+  }
+  .card figure {
+    flex-flow: column-reverse;
+  }
+  .card p {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    width: min(100%, 400px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    width: min(calc(33% - 1rem), 500px);
+  }
+}
+
+/* Mobile Device Landscapes */
+
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+
+  .card {
+    width: min(calc(33% - 0.5rem), 200px);
+  }
+
+  .card figcaption,
+  .card p {
+    font-size: 1.2rem;
+    white-space: nowrap;
+    margin: 0.5%;
+  }
+
+  nav {
+    display: none;
+  }
+}
