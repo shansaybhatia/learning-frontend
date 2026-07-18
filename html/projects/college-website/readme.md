@@ -1,4 +1,4 @@
-# HTML Projects
+# HTML Project
 
 This directory contains a project {College-website} built using **HTML only** as part of my frontend learning journey.
 
@@ -8,7 +8,7 @@ The project in this folder focuses on practicing core HTML concepts, including s
 
 ## Purpose
 
-The projects in this folder are created to:
+The project in this folder is created to:
 
 - Apply HTML concepts in real-world scenarios
 - Practice building complete, multi-page websites
