@@ -25,3 +25,37 @@ Taco_Shop/
 ├── contact.html       # Interactive Contact Form & Location Details
 └── main.css           # Minimal CSS Layout Rules
 ```
+
+---
+
+## ▶️ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/shansaybhatia/learning-frontend.git
+```
+
+> Replace `your-username` with your GitHub username.
+
+Or download the repository as a ZIP file and extract it.
+
+### 2. Navigate to the project folder
+
+```bash
+cd Restaurant_Menu
+```
+
+### 3. Open the project
+
+Open the `index.html` file in your preferred web browser.
+
+No additional dependencies or installation are required.
+
+---
+
+## 📸 Preview
+
+Screenshots of the project are available in the **website-overview/** folder.
+
+---

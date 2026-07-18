@@ -16,5 +16,5 @@ This module targets complex layout design, strict document styling constraints, 
 ### 🚀 Applied Designs (`projects/`)
 
 - **college-website:** Complete multi-page portal rendering applying complex grid scaffolding, adaptive column matching grids, and crisp form boundaries.
-- **Restraunt_Menu:** A high-end visual grid layout optimizing structural component alignments and clear price-list presentation layers.
+- **Restaurant_Menu:** A structural core project designed to practice box-model boundaries, explicit text alignments, high-contrast block backgrounds, and custom component borders.
 - **Taco_Shop:** A responsive brand concept utilizing fluid structural spacing and visual brand token matching.
