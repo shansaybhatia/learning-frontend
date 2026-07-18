@@ -1,61 +1,34 @@
-# learning-frontend
+# Frontend Engineering & Core Technologies Blueprint 🚀
 
-My frontend learning journey --- starting with HTML basics and an HTML-only projects.
+Welcome to my core frontend development roadmap repository. This workspace serves as a structured, production-grade tracking environment dedicated to mastering the core mechanics of client-side web software engineering.
 
-This repository documents my structured journey into **Frontend Development**.
-It begins with **HTML fundamentals** and will progressively expand to include **CSS** and **JavaScript** as I advance.
-
----
-
-## Purpose
-
-The goal of this repository is to:
-
-- Build strong frontend fundamentals
-- Practice writing clean, readable code
-- Track learning progress over time
-- Maintain a clear and organized learning structure
-
-This repository serves as both a learning log and a reference.
+Rather than relying on abstract multi-layer libraries, this repository tracks deep, programmatic competency across the three fundamental pillars of the modern web platform: semantic presentation logic, structural rendering architectures, and programmatic state engines.
 
 ---
 
-## Current Progress
+## 🛠️ Repository Ecosystem
 
-- HTML fundamentals — Completed
-- CSS styling — in progress
-- JavaScript fundamentals — in progress
+The workspace is organized into three progressive architectural layers:
 
----
+### 📑 1. [HTML](./html/) (Structural Architecture)
 
-## Implemented Concepts (HTML)
+- **Focus:** Core semantic document object mapping, accessible validation form engines, and raw layout structures.
+- **Milestones:** Multi-page web maps, nested tabular datasets, and multi-step data submission fieldsets.
 
-- Document structure and best practices
-- Semantic HTML elements
-- Forms and input handling
-- Tables and lists
-- Multi-page website navigation
-- Logical file and folder organization
+### 🎨 2. [CSS](./css/) (Visual Presentation & Responsive Layout Design)
 
----
+- **Focus:** Advanced visual layout systems (Flexbox, Grid), box-model boundaries, custom variable engines, dynamic animations, and complex media matching query grids.
+- **Milestones:** Multi-device typography hierarchies, dynamic UI micro-interactions, component card designs, and absolute layout control.
 
-## Projects
+### ⚡ 3. [JavaScript](./javascript/) (Programmatic Execution & State Logic)
 
-### College Website (HTML Only)
-
-A multi-page college website built using **only HTML**, focusing on:
-
-- Semantic structure
-- Clear navigation
-- Proper content hierarchy
-- Maintainable folder organization
-
-Project location:
-html/projects/college-website/
+- **Focus:** Algorithmic basics, nested data structures (Arrays & Objects), complex execution contexts, and core DOM scripting logic.
+- **Milestones:** Algorithmic data transformations, functional encapsulation routines, and operational interaction logic.
 
 ---
 
-## About Me
+## ⚙️ Project Standards & Architecture
 
-I am a college student learning **Full Stack Development** with an emphasis on strong fundamentals.
-This repository represents my first step into consistent and structured frontend development.
+- **Zero Framework Reliance:** Every folder focuses strictly on native Web Standard specifications to build rock-solid foundational depth.
+- **Clean Workspace Conventions:** Structured modular isolation across core syntax modules (`Lessons/`) and practical implementations (`projects/`).
+- **Local Execution:** Being completely standard-native, no build compilation stages, bundlers, or package installations are required. Clone and execute locally by dropping any target document context into a modern web browser runtime engine.
