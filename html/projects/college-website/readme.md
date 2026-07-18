@@ -37,14 +37,12 @@ A multi-page, lightweight static university portal designed to demonstrate core 
 git clone https://github.com/shansaybhatia/learning-frontend.git
 ```
 
-> Replace `your-username` with your GitHub username.
-
 Or download the repository as a ZIP file and extract it.
 
 ### 2. Navigate to the project folder
 
 ```bash
-cd Restaurant_Menu
+cd college-website
 ```
 
 ### 3. Open the project

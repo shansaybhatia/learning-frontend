@@ -44,8 +44,6 @@ Restaurant_Menu/
 git clone https://github.com/shansaybhatia/learning-frontend.git
 ```
 
-> Replace `your-username` with your GitHub username.
-
 Or download the repository as a ZIP file and extract it.
 
 ### 2. Navigate to the project folder
