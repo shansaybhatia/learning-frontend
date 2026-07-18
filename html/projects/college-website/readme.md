@@ -1,39 +1,28 @@
-# HTML Project
+# UPES College Website Portal 🎓
 
-This directory contains a project {College-website} built using **HTML only** as part of my frontend learning journey.
+A multi-page, lightweight static university portal designed to demonstrate core proficiency in native HTML5 elements, multi-section web architecture, data layout systems, and clean form validation. This project focuses entirely on programmatic document structure and semantic layout conventions with minimal CSS overhead.
 
-The project in this folder focuses on practicing core HTML concepts, including structure, semantics, navigation, and file organization, without relying on CSS or JavaScript.
+## 🚀 Features
 
----
+- **Multi-Page Portal Structure:** A fully decoupled five-page routing architecture containing Home, Courses, Admission, Faculty, and Contact portals.
+- **Advanced Form Handling:** A dedicated multi-fieldset admission form implementation tracking personal, course, and contact parameters utilizing explicit `<fieldset>`, `<legend>`, type-specific validation fields (date-pickers, radio matrix, custom select pickers), and textarea layouts.
+- **Data Presentation:** Structural tabular formatting (`<table>`, `<thead>`, explicit rows/columns) to neatly display diverse institutional data sets like undergraduate/postgraduate course capacities, seat matrices, and department faculty rosters.
+- **Embedded Resource Mocking:** Structured integration of multimedia campus previews and explicit layout map components for operational location tracking.
 
-## Purpose
+## 🛠️ Tech Stack
 
-The project in this folder is created to:
+- **HTML5:** Structural logic, deep multi-page hyperlinking, native validation forms, layout tables.
+- **CSS3:** Baseline presentation scaffolding (container alignments, explicit borders, clean text wrapping).
 
-- Apply HTML concepts in real-world scenarios
-- Practice building complete, multi-page websites
-- Improve understanding of semantic HTML
-- Develop good project organization habits
+## 📂 Project Structure
 
----
-
-## Projects Overview
-
-Each project is stored in its own folder and may include:
-
-- One or more HTML pages
-- Internal navigation between pages
-- Forms, tables, and structured content
-
----
-
-## Technologies Used
-
-- HTML5
-
----
-
-## Notes
-
-These projects intentionally avoid CSS and JavaScript to ensure a strong foundation in HTML fundamentals.
-Styling and interactivity may be added in future stages of learning.
+```text
+├── img/                # Image assets for campus, faculty, and course previews
+├── website-overview/   # Visual representation of the portal layout
+├── index.html          # Portal Home & Institutional Details
+├── courses.html        # Course Matrix & Seats Table
+├── admission.html      # Complex Input Validation Admission Form
+├── faculty.html        # Department Roster Data Table
+├── contact.html        # Physical Location Routing & Embedded Mapping
+├── success.html        # Form Return Submission Target Page
+```
