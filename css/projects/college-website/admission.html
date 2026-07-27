@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Shansay Bhatia" />
+    <meta name="description"
+        content="Apply for admission and begin your academic journey. Learn about the application process, eligibility, and enrollment requirements." />
+    <title>Admissions | UPES Dehradun</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="icon" href="assets/icons/upes-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/layouts.css" type="text/css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="header__nav">
+            <div id="logo" class="header__logo">
+                <figure>
+                    <a href="index.html">
+                        <img src="assets/icons/upes-icon.png" alt="Upes Logo" width="150" height="150">
+                    </a>
+                    <figcaption class="offscreen">UPES Dehradun</figcaption>
+                </figure>
+                <a href="index.html">
+                    <div class="logo_text-group">
+                        <span class="logo__title">UPES</span>
+                        <span class="logo__caption">University of Tomorrow</span>
+                    </div>
+                </a>
+            </div>
+            <ul class="header__ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Admission Form</h2>
+
+        <form action="submit.html">
+
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname">
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+                <br><br>
+
+                Gender:
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Course Details</legend>
+
+                <label for="course">Course Applied:</label>
+                <select id="course" name="course">
+                    <option value="cse">B.Tech Computer Science</option>
+                    <option value="me">B.Tech Mechanical Engineering</option>
+                    <option value="physics">B.Sc Physics</option>
+                    <option value="pe">B.Tech Petroleum Engineering</option>
+                    <option value="ae">B.Tech Aerospace Engineering</option>
+                </select>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Contact Details</legend>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+                <br><br>
+
+                <label for="city">City:</label>
+                <select id="city" name="city">
+                    <option value="delhi">Delhi</option>
+                    <option value="haryana">Haryana</option>
+                    <option value="punjab">Punjab</option>
+                    <option value="up">Uttar Pradesh</option>
+                    <option value="bangalore">Bangalore</option>
+                </select>
+
+                <br><br>
+
+                <label for="address">Address:</label><br>
+                <textarea id="address" name="address" rows="4"></textarea>
+            </fieldset>
+
+            <br>
+
+            <input type="submit" value="Submit Application">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2026 UPES Dehradun. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

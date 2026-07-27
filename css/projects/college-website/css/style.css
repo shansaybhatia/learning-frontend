@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* UTILITY CLASSES */
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+/* VARIABLES */
+
+:root {
+  /* FONTS */
+  --FF: "Inter", sans-serif;
+  --FS: 1rem;
+  --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+  /* COLORS */
+  --TEXT: #000;
+  --BORDER: #e6e6e6;
+  --UNIVERSITY-GREEN: #2f584f;
+}
+
+a:any-link {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  font-family: var(--FF);
+}

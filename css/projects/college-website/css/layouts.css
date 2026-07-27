@@ -1,0 +1,155 @@
+@import url(style.css);
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header__logo img {
+  width: 100px;
+  height: auto;
+}
+
+.header__logo {
+  background-color: white;
+  color: var(--UNIVERSITY-GREEN);
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo_text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: -15px;
+  margin-bottom: 5px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.logo__title {
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 3rem;
+  color: var(--UNIVERSITY-GREEN);
+  border-bottom: 2px solid var(--UNIVERSITY-GREEN);
+  margin-bottom: 3px;
+  line-height: 0.8;
+}
+
+.logo__caption {
+  color: var(--UNIVERSITY-GREEN);
+  font-size: 12px;
+}
+
+.header__ul {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  background-color: var(--UNIVERSITY-GREEN);
+  flex: 1;
+  padding: 3rem;
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.header__ul a {
+  border: 1px solid var(--BORDER);
+  padding: 0.5rem;
+  border-radius: 35px;
+}
+
+.header__ul a:hover {
+  color: var(--UNIVERSITY-GREEN);
+  background-color: white;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.hero__left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero__badge {
+  padding: 0.5rem;
+  border: 2px solid var(--UNIVERSITY-GREEN);
+  border-radius: 35px;
+  font-size: 1rem;
+  margin: 0 2rem 1rem;
+  color: var(--UNIVERSITY-GREEN);
+}
+
+.hero__h1 {
+  font-size: 4rem;
+}
+
+.hero__h1 span {
+  color: var(--UNIVERSITY-GREEN);
+  font-style: italic;
+}
+
+.hero__quote {
+  font-size: 1rem;
+}
+
+.hero__buttons a {
+  border-radius: 35px;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero__buttons a:first-child {
+  background-color: var(--UNIVERSITY-GREEN);
+  color: white;
+  border: 2px solid var(--UNIVERSITY-GREEN);
+}
+
+.hero__buttons a:last-child {
+  border: 2px solid var(--UNIVERSITY-GREEN);
+  color: var(--UNIVERSITY-GREEN);
+}
+
+.hero__buttons a:hover,
+.hero__buttons a:focus {
+  background-color: var(--UNIVERSITY-GREEN);
+  color: white;
+}
+
+.hero__left,
+.hero__right {
+  flex: 1;
+}
+
+.hero__right {
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.hero__main-image img {
+  border-radius: 15px;
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  border: 2px solid white;
+}
+
+.hero__float-image img {
+  border-radius: 15px;
+  position: absolute;
+  width: 40%;
+  max-width: 300px;
+  height: auto;
+  border: 5px solid white;
+}
