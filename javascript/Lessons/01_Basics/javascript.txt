@@ -1,0 +1,35 @@
+JavaScript execution context is the environment in which JavaScript code runs. It can be a web browser, a server (like Node.js), or any other platform that supports JavaScript. The execution context determines how variables, functions, and objects are accessed and manipulated during the execution of the code.
+
+    * Global execution context is the default context in which JavaScript code runs. It is created when the JavaScript engine starts executing the code and is associated with the global object (like `window` in browsers or `global` in Node.js). In this context, variables and functions declared outside of any function are accessible globally.
+
+    * Function execution context is created whenever a function is invoked. Each time a function is called, a new execution context is created for that function. This context has its own scope, which means that variables and functions declared within the function are only accessible within that function's execution context.
+
+    * Eval execution context is created when the `eval()` function is called. The `eval()` function allows you to execute a string of JavaScript code within the current execution context. However, using `eval()` is generally discouraged due to security and performance concerns.
+
+Phases of Execution Context Lifecycle:
+    Memory creation phase is the first phase of the execution context lifecycle. During this phase, the JavaScript engine allocates memory for variables and functions. It also sets up the scope chain, which determines how variables are resolved in nested functions.
+
+    Execution phase is the second phase of the execution context lifecycle. In this phase, the JavaScript engine executes the code line by line, updating variable values and executing functions as needed. The execution phase is where the actual logic of the code is carried out.
+
+For function execution it creates a new execution context or new varaibale environment + thread for each function call, allowing for recursion and nested function calls. Each function execution context has its own variable environment and scope chain, which ensures that variables are properly isolated and managed.
+
+for example, consider the following code:
+```javascript
+let a = 10;
+let b = 20;
+function add(x, y) {
+  let result = x + y;
+  return result;
+}
+let result = add(a, b);
+let result2 = add(5, 15);
+```
+
+for this javascript code, the global execution context is created first, where variables `a`, `b`, and `result` are declared i.e. memory phase and execution phase. When the `add` function is called with arguments `a` and `b`, a new function execution context is created for that call. Inside this context again memory phase and execution phase is carried out, the parameters `x` and `y` are assigned the values of `a` and `b`, respectively, and the local variable `result` is calculated. After the function returns, the execution context for that function call is destroyed, and control returns to the global execution context.
+
+When the second call to `add(5, 15)` is made, another function execution context is created with its own set of parameters and local variables. This demonstrates how each function call has its own isolated execution context, allowing for proper variable management and avoiding conflicts between different calls.
+
+
+Call Stack:
+The call stack is a data structure that keeps track of the execution contexts in a Last In, First Out (LIFO) order. When a function is called, its execution context is pushed onto the call stack. When the function completes execution, its context is popped off the stack, and control returns to the previous context.
+but for nested function calls, the call stack can grow as each new function call adds a new execution context to the stack. If the stack grows too large, it can lead to a "stack overflow" error, which occurs when there are too many nested function calls and the stack exceeds its limit.
