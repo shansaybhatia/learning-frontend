@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -10,71 +10,106 @@
     <title>Faculty | UPES Dehradun</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="icon" href="assets/icons/upes-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/layouts.css" type="text/css">
     <script src="js/main.js" defer></script>
 </head>
 
 <body>
 
-    <header>
-        <h1>Welcome to UPES!</h1>
-        <p>University of Tomorrow</p>
+    <header class="header header--sub">
+        <nav class="header__nav">
+            <div id="logo" class="header__logo">
+                <figure>
+                    <a href="index.html">
+                        <img src="assets/icons/upes-icon.png" alt="Upes Logo" width="150" height="150">
+                    </a>
+                    <figcaption class="offscreen">UPES Dehradun</figcaption>
+                </figure>
+                <a href="index.html">
+                    <div class="logo__text-group">
+                        <span class="logo__title">UPES</span>
+                        <span class="logo__caption">University of Tomorrow</span>
+                    </div>
+                </a>
+            </div>
+            <div class="header__ul">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="index.html#aboutus">About Us</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li class="nav__contact"><a href="tel:+918750012345"> <svg class="lucide-phone"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone">
+                                <path
+                                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                            </svg><span>(+91)87500 12345</span></a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="admission.html">Admission</a></li>
-            <li><a href="faculty.html">Faculty</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <section class="page-banner">
+        <div class="container">
+            <span class="page-banner__eyebrow">People</span>
+            <h1>Our Faculty</h1>
+            <p>Experienced educators driving research and student success.</p>
+        </div>
+    </section>
 
-    <main>
-        <h2>Our Faculty</h2>
-
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Department</th>
-                    <th>Experience</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Dr. A. Kumar</td>
-                    <td>Computer Science</td>
-                    <td>10 Years</td>
-                </tr>
-                <tr>
-                    <td>Prof. S. Mehta</td>
-                    <td>Mechanical Engineering</td>
-                    <td>12 Years</td>
-                </tr>
-                <tr>
-                    <td>Dr. R. Singh</td>
-                    <td>Physics</td>
-                    <td>8 Years</td>
-                </tr>
-                <tr>
-                    <td>Prof. L. Sharma</td>
-                    <td>Petroleum Engineering</td>
-                    <td>15 Years</td>
-                </tr>
-                <tr>
-                    <td>Dr. M. Gupta</td>
-                    <td>Aerospace Engineering</td>
-                    <td>9 Years</td>
-                </tr>
-            </tbody>
-        </table>
+    <main class="container">
+        <section class="table-section">
+            <div class="table-wrap">
+                <table>
+                    <caption class="offscreen">Faculty Roster</caption>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Experience</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dr. A. Kumar</td>
+                            <td>Computer Science</td>
+                            <td>10 Years</td>
+                        </tr>
+                        <tr>
+                            <td>Prof. S. Mehta</td>
+                            <td>Mechanical Engineering</td>
+                            <td>12 Years</td>
+                        </tr>
+                        <tr>
+                            <td>Dr. R. Singh</td>
+                            <td>Physics</td>
+                            <td>8 Years</td>
+                        </tr>
+                        <tr>
+                            <td>Prof. L. Sharma</td>
+                            <td>Petroleum Engineering</td>
+                            <td>15 Years</td>
+                        </tr>
+                        <tr>
+                            <td>Dr. M. Gupta</td>
+                            <td>Aerospace Engineering</td>
+                            <td>9 Years</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>© 2026 UPES Dehradun. All rights reserved.</p>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+            <span class="nowrap">UPES Dehradun. All rights reserved.</span>
+        </p>
     </footer>
-
 </body>
 
 </html>

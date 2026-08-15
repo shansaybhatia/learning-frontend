@@ -7,7 +7,7 @@
   flex: 1;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 10;
   max-height: 10vh;
   background-color: white;
   max-width: 100%;
@@ -82,6 +82,7 @@
   justify-content: center;
   gap: 0.6rem;
   border: 1px solid var(--BORDER);
+  color: white;
   padding: 0.7rem 1rem;
   border-radius: 35px;
 }
@@ -115,6 +116,12 @@
   display: block;
 }
 
+/* SUB-PAGE HEADER */
+
+.header--sub {
+  margin-bottom: 0;
+}
+
 /* HERO SECTION */
 
 .hero {
@@ -122,6 +129,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 4rem;
+  padding-block: 3rem 4rem;
 }
 
 .hero__left {
@@ -131,16 +139,17 @@
 }
 
 .hero__badge {
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border: 2px solid var(--UNIVERSITY-GREEN);
   border-radius: 35px;
   font-size: 1rem;
-  margin: 0 2rem 1rem;
+  width: fit-content;
   color: var(--UNIVERSITY-GREEN);
 }
 
 .hero__h1 {
   font-size: 4rem;
+  color: var(--TEXT);
 }
 
 .hero__h1 span {
@@ -150,12 +159,21 @@
 
 .hero__quote {
   font-size: 1rem;
+  max-width: 42ch;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 1rem;
 }
 
 .hero__buttons a {
   border-radius: 35px;
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.6rem;
+  font-weight: 600;
 }
 
 .hero__buttons a:first-child {
@@ -181,23 +199,403 @@
 }
 
 .hero__right {
+  position: relative;
   padding: 2rem;
   margin: 1rem;
 }
 
 .hero__main-image img {
-  border-radius: 15px;
+  border-radius: var(--RADIUS);
   width: 100%;
   max-width: 650px;
   height: auto;
   border: 2px solid white;
+  box-shadow: var(--SHADOW);
+}
+
+.hero__float-image {
+  position: absolute;
+  bottom: -5rem;
+  left: -5rem;
 }
 
 .hero__float-image img {
-  border-radius: 15px;
-  position: absolute;
-  width: 40%;
+  border-radius: var(--RADIUS-SM);
+  width: 100%;
   max-width: 300px;
   height: auto;
   border: 5px solid white;
+  box-shadow: var(--SHADOW);
+}
+
+/* CHANCELLOR MESSAGE */
+
+.header__article {
+  padding-block: 2rem 3rem;
+  border-top: 1px solid var(--BORDER);
+  max-width: 70ch;
+}
+
+.header__article h2 {
+  color: var(--UNIVERSITY-GREEN);
+}
+
+/* MAIN CONTENT SECTIONS (about / why choose / campus) */
+
+main.container {
+  padding-block: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about h2,
+.campus h2 {
+  color: var(--UNIVERSITY-GREEN);
+}
+
+.about p {
+  max-width: 65ch;
+}
+
+.why {
+  background: var(--UNIVERSITY-GREEN-LIGHT);
+  border-radius: var(--RADIUS);
+  padding: 2rem 2.5rem;
+}
+
+.why h2 {
+  color: var(--UNIVERSITY-GREEN);
+}
+
+.why__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.9rem 2rem;
+}
+
+.why__list li {
+  position: relative;
+  padding-left: 1.6rem;
+  font-weight: 600;
+  color: var(--UNIVERSITY-GREEN-DARK);
+}
+
+.why__list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--UNIVERSITY-GREEN);
+  font-weight: 700;
+}
+
+.campus p {
+  margin-bottom: 1.25rem;
+  max-width: 65ch;
+}
+
+.campus img {
+  border-radius: var(--RADIUS);
+  box-shadow: var(--SHADOW);
+  max-height: 750px;
+  object-fit: cover;
+}
+
+/* PAGE BANNER (sub-pages) */
+
+.page-banner {
+  background: var(--UNIVERSITY-GREEN);
+  color: white;
+  padding-block: 3rem;
+  margin: 2rem 0 0;
+}
+
+.page-banner__eyebrow {
+  display: inline-block;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 35px;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.page-banner h1 {
+  font-family: var(--FF-HEADING);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  margin-bottom: 0.5rem;
+}
+
+.page-banner p {
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 55ch;
+}
+
+/* TABLES (courses / faculty) */
+
+.table-section {
+  margin-bottom: 1rem;
+}
+
+.table-section h2 {
+  color: var(--UNIVERSITY-GREEN);
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border-radius: var(--RADIUS);
+  box-shadow: var(--SHADOW);
+  background: var(--SURFACE);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 480px;
+}
+
+thead {
+  background: var(--UNIVERSITY-GREEN);
+}
+
+th {
+  color: white;
+  text-align: left;
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+}
+
+td {
+  padding: 0.9rem 1.25rem;
+  border-bottom: 1px solid var(--BORDER);
+  color: var(--TEXT);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background: var(--UNIVERSITY-GREEN-LIGHT);
+}
+
+tfoot td {
+  padding: 0.9rem 1.25rem;
+  font-weight: 600;
+  color: var(--UNIVERSITY-GREEN-DARK);
+  background: var(--UNIVERSITY-GREEN-LIGHT);
+}
+
+/* ADMISSION FORM */
+
+.admission-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+.admission-form fieldset {
+  border: none;
+  background: var(--SURFACE);
+  border-radius: var(--RADIUS);
+  box-shadow: var(--SHADOW);
+  padding: 1.75rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.admission-form legend {
+  font-family: var(--FF-HEADING);
+  font-weight: 700;
+  color: var(--UNIVERSITY-GREEN);
+  font-size: 1.15rem;
+  padding-bottom: 0.5rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-row label,
+.form-row__label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--TEXT);
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  border: 1px solid var(--BORDER);
+  border-radius: var(--RADIUS-SM);
+  padding: 0.7rem 0.9rem;
+  color: var(--TEXT);
+  background: var(--BG);
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+  outline: none;
+  border-color: var(--UNIVERSITY-GREEN);
+  box-shadow: 0 0 0 3px var(--UNIVERSITY-GREEN-LIGHT);
+}
+
+.radio-group {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 400;
+}
+
+.btn-submit {
+  align-self: flex-start;
+  background: var(--UNIVERSITY-GREEN);
+  color: white;
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: 35px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+}
+
+.btn-submit:hover {
+  background: var(--UNIVERSITY-GREEN-DARK);
+  color: white;
+}
+
+/* CONTACT PAGE */
+
+.contact {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.contact__card {
+  flex: 1;
+  min-width: 260px;
+  background: var(--SURFACE);
+  border-radius: var(--RADIUS);
+  box-shadow: var(--SHADOW);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-style: normal;
+}
+
+.contact__card strong {
+  color: var(--UNIVERSITY-GREEN);
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.contact__map {
+  flex: 1.4;
+  min-width: 280px;
+  border-radius: var(--RADIUS);
+  overflow: hidden;
+  box-shadow: var(--SHADOW);
+}
+
+.contact__map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  display: block;
+}
+
+/* SUCCESS PAGE */
+
+.success-card {
+  max-width: 520px;
+  margin: 1rem auto;
+  text-align: center;
+  background: var(--SURFACE);
+  border-radius: var(--RADIUS);
+  box-shadow: var(--SHADOW);
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  align-items: center;
+}
+
+.success-card h1 {
+  color: var(--UNIVERSITY-GREEN);
+}
+
+.success-card .btn-submit {
+  margin-top: 0.5rem;
+  color: white;
+}
+
+/* FOOTER */
+
+.footer {
+  background: var(--UNIVERSITY-GREEN-DARK);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.footer p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .header__nav {
+    flex-direction: column;
+    position: static;
+    max-height: none;
+  }
+
+  .header__ul {
+    border-radius: 0;
+  }
+
+  .header__ul::before {
+    display: none;
+  }
+
+  .header__ul ul {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding-block: 2rem;
+  }
+
+  .hero__h1 {
+    font-size: 2.6rem;
+  }
+
+  .hero__float-image {
+    position: static;
+    margin-top: 1rem;
+  }
+
+  .why__list {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
 }

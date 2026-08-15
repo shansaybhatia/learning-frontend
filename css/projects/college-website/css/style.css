@@ -16,7 +16,8 @@ img {
 
 input,
 button,
-textarea {
+textarea,
+select {
   font: inherit;
 }
 
@@ -35,25 +36,66 @@ textarea {
   text-align: center;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
 /* VARIABLES */
 
 :root {
   /* FONTS */
   --FF: "Inter", sans-serif;
+  --FF-HEADING: "Nunito", sans-serif;
   --FS: 1rem;
   --FS: clamp(1rem, 2.2vh, 1.5rem);
 
   /* COLORS */
-  --TEXT: #000;
+  --TEXT: #1c1c1c;
+  --TEXT-MUTED: #6b6b6b;
   --BORDER: #e6e6e6;
   --UNIVERSITY-GREEN: #2f584f;
+  --UNIVERSITY-GREEN-DARK: #203e37;
+  --UNIVERSITY-GREEN-LIGHT: #eaf1ef;
+  --SURFACE: #ffffff;
+  --BG: #fbfbf9;
+
+  /* LAYOUT */
+  --RADIUS: 16px;
+  --RADIUS-SM: 10px;
+  --SHADOW: 0 10px 30px rgba(32, 62, 55, 0.08);
 }
 
 a:any-link {
   text-decoration: none;
-  color: white;
+  color: var(--UNIVERSITY-GREEN);
 }
 
 body {
   font-family: var(--FF);
+  color: var(--TEXT);
+  background: var(--BG);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--FF-HEADING);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin-bottom: 0.75rem;
+}
+
+p {
+  color: var(--TEXT-MUTED);
+}
+
+html {
+  scroll-behavior: smooth;
 }
