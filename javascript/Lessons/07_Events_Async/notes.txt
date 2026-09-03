@@ -1,0 +1,13 @@
+Javascript is single-threaded, meaning it can only execute one piece of code at a time. However, it can handle asynchronous operations using callbacks, promises, and async/await syntax. This allows JavaScript to perform tasks like fetching data from an API or reading files without blocking the main thread, enabling a smoother user experience.
+
+Javascript is sunchronous by default, meaning that code is executed in the order it is written. However, when dealing with asynchronous operations, JavaScript can use the event loop to manage these tasks. The event loop allows JavaScript to offload tasks to the browser or Node.js environment, which can handle them in the background and notify the main thread when they are complete.
+
+execute context - executes line by line, and when it encounters an asynchronous operation, it registers a callback function to be executed later. This allows the main thread to continue executing other code while waiting for the asynchronous operation to complete.
+
+Blocking code: block the flow of execution, preventing other code from running until the blocking operation is finished. This can lead to performance issues and a poor user experience. it reads files synchronously, meaning it waits for the file to be read before moving on to the next line of code. This can cause delays and make the application unresponsive.
+
+Non-blocking code: allows other code to run while waiting for an operation to complete. This is achieved through asynchronous programming techniques, such as using callbacks, promises, or async/await. Non-blocking code improves performance and responsiveness, making applications more efficient and user-friendly. it reads files asynchronously, allowing the application to continue executing other code while waiting for the file to be read. This results in a more responsive and efficient application.  
+
+Event loop: a mechanism that allows JavaScript to handle asynchronous operations by offloading tasks to the browser or Node.js environment. The event loop continuously checks for completed tasks and executes their associated callback functions, ensuring that the main thread remains responsive.
+
+fetch API: a modern interface for making HTTP requests in JavaScript. It returns a promise that resolves to the response of the request, allowing developers to handle asynchronous operations more easily. The fetch API is widely used for fetching data from APIs and can be combined with async/await syntax for cleaner code.
