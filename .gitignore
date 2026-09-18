@@ -19,3 +19,6 @@ Thumbs.db
 *.d.ts
 *.d.ts.map
 *.js.map
+
+# Sass source maps
+*.css.map
