@@ -12075,17 +12075,6 @@ textarea.form-control-lg {
   padding: 0;
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
 }
-.testimonials__wave {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.testimonials__wave--top {
-  margin-top: -1px;
-}
-.testimonials__wave--bottom {
-  margin-bottom: -1px;
-}
 .testimonials__card {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 2rem 1.25rem;

@@ -6,20 +6,6 @@
   padding: 0;
   @include gradient;
 
-  &__wave {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  &__wave--top {
-    margin-top: -1px;
-  }
-
-  &__wave--bottom {
-    margin-bottom: -1px;
-  }
-
   &__card {
     background-color: rgba($white, 0.8);
     padding: 2rem 1.25rem;
