@@ -16,7 +16,7 @@
   "author": "Shansay Bhatia",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.104.1"
+    "sass": "1.77.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.3.1",
