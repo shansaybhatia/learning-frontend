@@ -8,7 +8,7 @@ An enhanced, fully styled multi-page university website demonstrating modern CSS
 
 ---
 
-![College Website Preview](website-preview/HomePage.png)
+![College Website Preview](website-preview/Homepage1.png)
 
 ---
 
@@ -37,12 +37,13 @@ college-website/
 ├── css/                # Custom stylesheets (layout, components, typography)
 ├── js/                 # Client scripting helpers
 ├── website-preview/    # Visual previews of each page
-│   ├── AdmissionPage.png
-│   ├── ContactPage.png
-│   ├── CoursePage.png
-│   ├── FacultyPage.png
-│   ├── HomePage.png
-│   └── SubmitPage.png
+│   ├── admission.png
+│   ├── contactus.png
+│   ├── courses.png
+│   ├── faculty.png
+│   ├── Homepage1.png
+│   ├── HomePage2.png
+│   └── submit.png
 ├── admission.html      # Styled student admission portal
 ├── contact.html        # Styled campus location & contact page
 ├── courses.html        # Styled academic course matrix
