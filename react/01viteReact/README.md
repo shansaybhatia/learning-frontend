@@ -1,16 +1,50 @@
-# React + Vite
+# ⚡ Vite + React Starter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
 
-Currently, two official plugins are available:
+A lightweight, modern React exploration project built with [Vite](https://vite.dev/) to compare modern ESM-based tooling with traditional bundlers.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📚 What I Practiced
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Vite Tooling:** Lightning-fast local development server, instant Hot Module Replacement (HMR), and streamlined project footprint.
+- **JSX Architecture:** Using `.jsx` extensions, functional component declarations, and fragment composition.
+- **Component Separation:** Modular component structure with `welcome.jsx` imported into `App.jsx`.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Key Files
+
+```
+01viteReact/
+├── public/
+├── src/
+│   ├── App.jsx         # Main application component
+│   ├── main.jsx        # ReactDOM.createRoot entry point
+│   └── welcome.jsx     # Reusable welcome component
+├── index.html          # Native ESM entry HTML
+├── vite.config.js      # Vite configuration with @vitejs/plugin-react
+└── package.json
+```
+
+---
+
+## 🚀 Running the App
+
+```bash
+# 1. Install dependencies
+npm install
+
+# 2. Launch Vite dev server
+npm run dev
+```
+
+Visit the local URL shown in your terminal (typically `http://localhost:5173`).
+
+---
+
+<p align="center">
+  📂 <strong><a href="../readme.md">← Back to React Overview</a></strong> | <strong><a href="../../README.md">← Repository Home</a></strong>
+</p>

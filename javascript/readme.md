@@ -28,18 +28,18 @@ Hands-on JavaScript learning — from variables and data types to DOM manipulati
 
 ---
 
-## 🛠️ Projects
+## 🛠️ [Projects](./projects/)
 
-Six mini-projects that put the lessons into practice:
+Six mini-projects that put the lessons into practice (access all via the [Projects Hub](./projects/index.html)):
 
 | # | Project | Description |
 |---|---------|-------------|
-| 1 | **colorChanger** | Change the page background color on button click |
-| 2 | **bmiCalculator** | Calculate Body Mass Index from user input |
-| 3 | **DigitalClock** | Live digital clock display |
-| 4 | **guessNumber** | Number guessing game with feedback |
-| 5 | **keyboard** | Detect and display keyboard events |
-| 6 | **unlimitedColors** | Generate random background colors continuously |
+| 1 | [**colorChanger**](./projects/1-colorChanger/) | Change the page background color on button click |
+| 2 | [**bmiCalculator**](./projects/2-bmiCalculator/) | Calculate Body Mass Index from user input |
+| 3 | [**DigitalClock**](./projects/3-DigitalClock/) | Live digital clock display |
+| 4 | [**guessNumber**](./projects/4-guessNumber/) | Number guessing game with feedback |
+| 5 | [**keyboard**](./projects/5-keyboard/) | Detect and display keyboard events |
+| 6 | [**unlimitedColors**](./projects/6-unlimitedColors/) | Generate random background colors continuously |
 
 ---
 

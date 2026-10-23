@@ -1,59 +1,67 @@
-# The Little Taco Shop 🌮
+# 🌮 The Little Taco Shop (Responsive + Theme Toggle)
 
-A lightweight, multi-page static website built to demonstrate core mastery of semantic HTML5 structure and clean content layout. This project focuses on building accessible, well-structured web pages with minimal CSS styling.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
-## 🚀 Features
+An advanced, responsive redesign of The Little Taco Shop featuring full CSS custom properties, fluid layouts, responsive media queries, and an interactive dark/light mode toggle.
 
-- **Multi-Page Architecture:** Includes fully linked semantic pages: Home, About, Menu, Store Hours, and Contact.
-- **Semantic HTML5:** Built entirely using native elements (`<header>`, `<main>`, `<section>`, `<figure>`, `<aside>`) to ensure maximum SEO optimization and accessibility.
-- **Interactive Elements:** Features a custom contact form (`<form>`) with dedicated inputs, interactive details drop-downs (`<details>`), and formatted data tables for menu pricing.
-- **Responsive Structure:** Uses lightweight, native CSS constraints to ensure a readable, centered single-column view layout across devices.
+---
+
+| Light Mode | Dark Mode |
+|:---:|:---:|
+| ![Light Mode](website-preview/LightMode/HomePage.png) | ![Dark Mode](website-preview/DarkMode/HomePage.png) |
+
+---
+
+## ✨ Features
+
+- **🌓 Dark & Light Theme Switcher:** Dynamic theme toggle implemented via CSS custom properties and lightweight JavaScript (`js/main.js`).
+- **📱 Responsive Media Queries:** Breakpoints tuned for seamless desktop, tablet, and mobile viewing.
+- **🎨 CSS Custom Properties:** Centralized color schemes and spacing tokens for effortless theme switching.
+- **📑 Multi-Page Architecture:** Fully styled Home, About, Store Hours, and Contact pages.
+
+---
 
 ## 🛠️ Tech Stack
 
-- **HTML5:** Core page architecture, semantic elements, forms, and data tables.
-- **CSS3:** Minimal design tokens for centering, typography handling, and clean spacing layout.
+- **HTML5:** Semantic document foundations and accessible content flow.
+- **CSS3:** Custom properties (variables), media queries, Flexbox, and transition animations.
+- **JavaScript:** Theme toggle state management in `js/main.js`.
 
-## 📂 Project Structure
+---
 
-```text
+## 📁 Project Structure
+
+```
 Taco_Shop/
-├── img/               # Image assets for menu items and store branding
-├── website-overview/  # Visual representation of the website layout
-├── index.html         # Home Page & About Section
-├── hours.html         # Store Hours
-├── contact.html       # Interactive Contact Form & Location Details
-└── main.css           # Minimal CSS Layout Rules
+├── css/
+│   └── style.css       # Main responsive stylesheet with CSS variables
+├── img/                # Photography assets
+├── js/
+│   └── main.js         # Theme toggle switcher logic
+├── website-preview/
+│   ├── DarkMode/       # Previews in dark theme
+│   └── LightMode/      # Previews in light theme
+├── about.html          # Brand story and history
+├── contact.html        # Interactive contact form
+├── index.html          # Store landing page
+├── readme.md
+└── storeHours.html     # Operating hours and location
 ```
 
 ---
 
 ## ▶️ Getting Started
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/shansaybhatia/learning-frontend.git
-```
-
-Or download the repository as a ZIP file and extract it.
-
-### 2. Navigate to the project folder
-
-```bash
-cd Taco_Shop
-```
-
-### 3. Open the project
-
-Open the `index.html` file in your preferred web browser.
-
-No additional dependencies or installation are required.
+1. Navigate to this directory:
+   ```bash
+   cd css/projects/Taco_Shop
+   ```
+2. Open `index.html` in your web browser. Try clicking the theme switcher button to toggle between light and dark modes!
 
 ---
 
-## 📸 Preview
-
-Screenshots of the project are available in the **website-overview/** folder.
-
----
+<p align="center">
+  📂 <strong><a href="../../readme.md">← Back to CSS Lessons</a></strong> | <strong><a href="../../../README.md">← Repository Home</a></strong>
+</p>

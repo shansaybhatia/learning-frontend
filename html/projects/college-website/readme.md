@@ -1,60 +1,64 @@
-# UPES College Website Portal 🎓
+# 🎓 UPES College Website Portal (HTML5)
 
-A multi-page, lightweight static university portal designed to demonstrate core proficiency in native HTML5 elements, multi-section web architecture, data layout systems, and clean form validation. This project focuses entirely on programmatic document structure and semantic layout conventions with minimal CSS overhead.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 
-## 🚀 Features
+A multi-page university website built with pure semantic HTML5 to demonstrate structured document hierarchy, accessible navigation, tabular data presentation, and complex form handling.
 
-- **Multi-Page Portal Structure:** A fully decoupled five-page routing architecture containing Home, Courses, Admission, Faculty, and Contact portals.
-- **Advanced Form Handling:** A dedicated multi-fieldset admission form implementation tracking personal, course, and contact parameters utilizing explicit `<fieldset>`, `<legend>`, type-specific validation fields (date-pickers, radio matrix, custom select pickers), and textarea layouts.
-- **Data Presentation:** Structural tabular formatting (`<table>`, `<thead>`, explicit rows/columns) to neatly display diverse institutional data sets like undergraduate/postgraduate course capacities, seat matrices, and department faculty rosters.
-- **Embedded Resource Mocking:** Structured integration of multimedia campus previews and explicit layout map components for operational location tracking.
+---
+
+![College Website Preview](website-preview/HomePage.png)
+
+---
+
+## ✨ Features
+
+- **Multi-Page Navigation:** Decoupled architecture across 5 pages: Home, Courses, Admission, Faculty, and Contact.
+- **Accessible Form Controls:** Dedicated admission form with `<fieldset>`, `<legend>`, required inputs, radio groups, select menus, and textarea fields.
+- **Tabular Data Presentation:** Well-formed `<table>` elements with `<thead>`, `<tbody>`, `<tr>`, and `<td>` for course seat matrices and faculty directories.
+- **Semantic Structure:** Comprehensive use of `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<footer>`.
+
+---
 
 ## 🛠️ Tech Stack
 
-- **HTML5:** Structural logic, deep multi-page hyperlinking, native validation forms, layout tables.
-- **CSS3:** Baseline presentation scaffolding (container alignments, explicit borders, clean text wrapping).
+- **HTML5:** Semantic elements, form validation attributes, table markup, and hyperlinks.
 
-## 📂 Project Structure
+---
 
-```text
-├── img/                # Image assets for campus, faculty, and course previews
-├── website-overview/   # Visual representation of the portal layout
-├── index.html          # Portal Home & Institutional Details
-├── courses.html        # Course Matrix & Seats Table
-├── admission.html      # Complex Input Validation Admission Form
-├── faculty.html        # Department Roster Data Table
-├── contact.html        # Physical Location Routing & Embedded Mapping
-├── success.html        # Form Return Submission Target Page
+## 📁 Project Structure
+
+```
+college-website/
+├── img/                # Campus and faculty imagery
+├── website-preview/    # Page preview screenshots
+│   ├── AdmissionPage.png
+│   ├── ContactPage.png
+│   ├── CoursePage.png
+│   ├── FacultyPage.png
+│   ├── HomePage.png
+│   └── SubmitPage.png
+├── admission.html      # Admission registration form
+├── contact.html        # Campus contact info and location details
+├── courses.html        # Academic programs and seat matrix tables
+├── faculty.html        # Department faculty roster table
+├── index.html          # Main university portal home
+├── readme.md
+└── submit.html         # Form submission confirmation page
 ```
 
 ---
 
 ## ▶️ Getting Started
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/shansaybhatia/learning-frontend.git
-```
-
-Or download the repository as a ZIP file and extract it.
-
-### 2. Navigate to the project folder
-
-```bash
-cd college-website
-```
-
-### 3. Open the project
-
-Open the `index.html` file in your preferred web browser.
-
-No additional dependencies or installation are required.
+1. Clone or download the repository.
+2. Navigate to this directory:
+   ```bash
+   cd html/projects/college-website
+   ```
+3. Open `index.html` directly in any web browser — no dependencies or build tools needed.
 
 ---
 
-## 📸 Preview
-
-Screenshots of the project are available in the **website-overview/** folder.
-
----
+<p align="center">
+  📂 <strong><a href="../../readme.md">← Back to HTML Lessons</a></strong> | <strong><a href="../../../README.md">← Repository Home</a></strong>
+</p>

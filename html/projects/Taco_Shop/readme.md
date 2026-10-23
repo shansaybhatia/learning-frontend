@@ -1,59 +1,59 @@
-# The Little Taco Shop 🌮
+# 🌮 The Little Taco Shop (HTML5)
 
-A lightweight, multi-page static website built to demonstrate core mastery of semantic HTML5 structure and clean content layout. This project focuses on building accessible, well-structured web pages with minimal CSS styling.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 
-## 🚀 Features
+A semantic, multi-page business website for a taco shop created to practice accessible HTML5 document outlines, data tables, and interactive details elements.
 
-- **Multi-Page Architecture:** Includes fully linked semantic pages: Home, About, Menu, Store Hours, and Contact.
-- **Semantic HTML5:** Built entirely using native elements (`<header>`, `<main>`, `<section>`, `<figure>`, `<aside>`) to ensure maximum SEO optimization and accessibility.
-- **Interactive Elements:** Features a custom contact form (`<form>`) with dedicated inputs, interactive details drop-downs (`<details>`), and formatted data tables for menu pricing.
-- **Responsive Structure:** Uses lightweight, native CSS constraints to ensure a readable, centered single-column view layout across devices.
+---
+
+![Taco Shop Preview](website-preview/homePage.png)
+
+---
+
+## ✨ Features
+
+- **Semantic Page Outlines:** Built with `<header>`, `<nav>`, `<main>`, `<section>`, `<figure>`, `<figcaption>`, and `<footer>`.
+- **Menu Pricing Tables:** Structured `<table>` display for taco varieties, fillings, and prices.
+- **Interactive Details:** Native `<details>` and `<summary>` tags for expanding FAQ and trivia content.
+- **Contact Inquiries:** Accessible inquiry form with labeled input fields and submit actions.
+
+---
 
 ## 🛠️ Tech Stack
 
-- **HTML5:** Core page architecture, semantic elements, forms, and data tables.
-- **CSS3:** Minimal design tokens for centering, typography handling, and clean spacing layout.
+- **HTML5:** Semantic document tags, tables, forms, and intra-site navigation.
+- **CSS:** Minimal reset and layout styling in `main.css`.
 
-## 📂 Project Structure
+---
 
-```text
+## 📁 Project Structure
+
+```
 Taco_Shop/
-├── img/               # Image assets for menu items and store branding
-├── website-overview/  # Visual representation of the website layout
-├── index.html         # Home Page & About Section
-├── hours.html         # Store Hours
-├── contact.html       # Interactive Contact Form & Location Details
-└── main.css           # Minimal CSS Layout Rules
+├── img/                # Taco photography and icons
+├── website-preview/    # Screenshots of pages
+│   ├── contactUs.png
+│   ├── homePage.png
+│   └── storeHours.png
+├── contact.html        # Customer contact & feedback form
+├── index.html          # Store landing page, about story, & menu table
+├── main.css            # Base stylesheet
+├── readme.md
+└── storeHours.html     # Operating hours and schedule
 ```
 
 ---
 
 ## ▶️ Getting Started
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/shansaybhatia/learning-frontend.git
-```
-
-Or download the repository as a ZIP file and extract it.
-
-### 2. Navigate to the project folder
-
-```bash
-cd Taco_Shop
-```
-
-### 3. Open the project
-
-Open the `index.html` file in your preferred web browser.
-
-No additional dependencies or installation are required.
+1. Navigate to this directory:
+   ```bash
+   cd html/projects/Taco_Shop
+   ```
+2. Open `index.html` directly in any web browser.
 
 ---
 
-## 📸 Preview
-
-Screenshots of the project are available in the **website-overview/** folder.
-
----
+<p align="center">
+  📂 <strong><a href="../../readme.md">← Back to HTML Lessons</a></strong> | <strong><a href="../../../README.md">← Repository Home</a></strong>
+</p>

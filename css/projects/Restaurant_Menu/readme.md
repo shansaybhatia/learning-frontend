@@ -1,84 +1,59 @@
 # 🍽️ Restaurant Menu Component
 
-A beginner-friendly HTML and CSS project focused on building a simple multi-page restaurant menu interface. This project was created to practice fundamental web development concepts such as the CSS Box Model, page navigation, layout styling, and basic visual design.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+
+A multi-page restaurant menu interface built to practice foundational CSS concepts, including the CSS Box Model, border radius, hover pseudo-classes, page navigation, and component styling.
+
+---
+
+![Restaurant Menu Preview](website-preview/mainCss.png)
 
 ---
 
 ## ✨ Features
 
-- Multi-page website structure
-- Navigation between HTML pages
-- CSS Box Model implementation
-- Custom borders and rounded corners using `border-radius`
-- Consistent color scheme and typography
-- Clean separation of HTML and CSS
+- **Multi-Page Navigation:** Fluid tab-like navigation linking menu categories (`one.html`, `two.html`, `three.html`).
+- **CSS Box Model Mastery:** Precise control of margin, padding, border, and content boundaries.
+- **Interactive States:** Dynamic `:hover` pseudo-class visual transitions on menu items.
+- **Rounded Card Styling:** Reusable menu card components using `border-radius` and modern contrast.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **HTML5** – Semantic page structure
-- **CSS3** – Styling, layout, spacing, colors, and borders
+- **HTML5:** Page structure and inter-page navigation links.
+- **CSS3:** Box model, border styling, color schemes, typography, and hover states.
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
-```text
+```
 Restaurant_Menu/
-├── website-overview/      # Screenshots of the website
-├── index.html             # Main landing page
-├── one.html               # Menu page 1
-├── two.html               # Menu page 2
-├── three.html             # Menu page 3
-└── style.css              # Main stylesheet
+├── website-preview/    # Screenshot previews
+│   ├── mainCss.png
+│   └── onHover.png
+├── index.html          # Landing page
+├── one.html            # Appetizers / Menu page 1
+├── two.html            # Main Courses / Menu page 2
+├── three.html          # Desserts & Drinks / Menu page 3
+├── readme.md
+└── style.css           # Core stylesheet
 ```
 
 ---
 
 ## ▶️ Getting Started
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/shansaybhatia/learning-frontend.git
-```
-
-Or download the repository as a ZIP file and extract it.
-
-### 2. Navigate to the project folder
-
-```bash
-cd Restaurant_Menu
-```
-
-### 3. Open the project
-
-Open the `index.html` file in your preferred web browser.
-
-No additional dependencies or installation are required.
+1. Navigate to this directory:
+   ```bash
+   cd css/projects/Restaurant_Menu
+   ```
+2. Open `index.html` in any web browser.
 
 ---
 
-## 📸 Preview
-
-Screenshots of the project are available in the **website-overview/** folder.
-
----
-
-## 📚 Learning Objectives
-
-This project was built to strengthen understanding of:
-
-- HTML page linking
-- CSS Box Model
-- Margins and padding
-- Borders and `border-radius`
-- Layout organization
-- Styling reusable components
-
----
-
-## 📄 License
-
-This project is intended for learning and educational purposes.
+<p align="center">
+  📂 <strong><a href="../../readme.md">← Back to CSS Lessons</a></strong> | <strong><a href="../../../README.md">← Repository Home</a></strong>
+</p>

@@ -1,60 +1,69 @@
-# UPES College Website Portal 🎓
+# 🎓 UPES College Website Portal (CSS3 Styled)
 
-A multi-page, lightweight static university portal designed to demonstrate core proficiency in native HTML5 elements, multi-section web architecture, data layout systems, and clean form validation. This project focuses entirely on programmatic document structure and semantic layout conventions with minimal CSS overhead.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
-## 🚀 Features
+An enhanced, fully styled multi-page university website demonstrating modern CSS3 layout techniques, card grids, responsive navigation, custom form styling, and interactive UI micro-interactions.
 
-- **Multi-Page Portal Structure:** A fully decoupled five-page routing architecture containing Home, Courses, Admission, Faculty, and Contact portals.
-- **Advanced Form Handling:** A dedicated multi-fieldset admission form implementation tracking personal, course, and contact parameters utilizing explicit `<fieldset>`, `<legend>`, type-specific validation fields (date-pickers, radio matrix, custom select pickers), and textarea layouts.
-- **Data Presentation:** Structural tabular formatting (`<table>`, `<thead>`, explicit rows/columns) to neatly display diverse institutional data sets like undergraduate/postgraduate course capacities, seat matrices, and department faculty rosters.
-- **Embedded Resource Mocking:** Structured integration of multimedia campus previews and explicit layout map components for operational location tracking.
+---
+
+![College Website Preview](website-preview/HomePage.png)
+
+---
+
+## ✨ Features & Enhancements
+
+- **Modern Visual Design:** Clean, consistent typography, custom card components, and branded color palette.
+- **Responsive Flexbox & Grid:** Structured layouts adapting gracefully to different screen viewports.
+- **Styled Form Components:** Enhanced input focus states, fieldset grouping, and customized submission controls.
+- **Multi-Page Experience:** Complete navigation across Home, Courses, Admission, Faculty, and Contact pages.
+
+---
 
 ## 🛠️ Tech Stack
 
-- **HTML5:** Structural logic, deep multi-page hyperlinking, native validation forms, layout tables.
-- **CSS3:** Baseline presentation scaffolding (container alignments, explicit borders, clean text wrapping).
+- **HTML5:** Semantic document foundations and structured data tables.
+- **CSS3:** Custom properties, Flexbox, Grid, transitions, and responsive styling.
+- **JavaScript:** Client-side form interactions and dynamic helpers.
 
-## 📂 Project Structure
+---
 
-```text
-├── img/                # Image assets for campus, faculty, and course previews
-├── website-overview/   # Visual representation of the portal layout
-├── index.html          # Portal Home & Institutional Details
-├── courses.html        # Course Matrix & Seats Table
-├── admission.html      # Complex Input Validation Admission Form
-├── faculty.html        # Department Roster Data Table
-├── contact.html        # Physical Location Routing & Embedded Mapping
-├── success.html        # Form Return Submission Target Page
+## 📁 Project Structure
+
+```
+college-website/
+├── assets/             # Brand logos, icons, and media assets
+├── css/                # Custom stylesheets (layout, components, typography)
+├── js/                 # Client scripting helpers
+├── website-preview/    # Visual previews of each page
+│   ├── AdmissionPage.png
+│   ├── ContactPage.png
+│   ├── CoursePage.png
+│   ├── FacultyPage.png
+│   ├── HomePage.png
+│   └── SubmitPage.png
+├── admission.html      # Styled student admission portal
+├── contact.html        # Styled campus location & contact page
+├── courses.html        # Styled academic course matrix
+├── faculty.html        # Styled faculty directory
+├── index.html          # Main portal homepage
+├── readme.md
+└── submit.html         # Form completion acknowledgement
 ```
 
 ---
 
 ## ▶️ Getting Started
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/shansaybhatia/learning-frontend.git
-```
-
-Or download the repository as a ZIP file and extract it.
-
-### 2. Navigate to the project folder
-
-```bash
-cd college-website
-```
-
-### 3. Open the project
-
-Open the `index.html` file in your preferred web browser.
-
-No additional dependencies or installation are required.
+1. Navigate to this directory:
+   ```bash
+   cd css/projects/college-website
+   ```
+2. Open `index.html` in your web browser.
 
 ---
 
-## 📸 Preview
-
-Screenshots of the project are available in the **website-overview/** folder.
-
----
+<p align="center">
+  📂 <strong><a href="../../readme.md">← Back to CSS Lessons</a></strong> | <strong><a href="../../../README.md">← Repository Home</a></strong>
+</p>
