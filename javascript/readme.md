@@ -1,17 +1,59 @@
-# Programmatic State Engines & Core JavaScript Logic ⚡
+# ⚡ JavaScript
 
-This environment documents my deep dive into the programming layers of the client-side web architecture. The curriculum maps foundational language design, clean data-type operations, operational logic, functional encapsulation, and eventual event-driven Document Object Model (DOM) scripting systems.
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+Hands-on JavaScript learning — from variables and data types to DOM manipulation, async programming, and object-oriented patterns. Includes structured lessons and mini-projects to practice each concept.
 
 ---
 
-## 📂 Module Map
+## 📚 Lessons
 
-### 📦 Logic & Syntax Modules
+### Getting Started
+| Lesson | Topics |
+|--------|--------|
+| **01_Basics** | Variables (`let`, `const`), data types, strings, numbers & math, dates, comparisons, type conversions, stack vs heap |
+| **02_ArraysObjects** | Arrays (methods, iteration), Objects (key-value pairs, nesting) |
+| **03_Fucntion** | Functions, arrow functions, IIFE, scopes |
+| **04_ControlFlow** | Conditional statements, switch/case, truthy & falsy values |
+| **05_Iterations** | `for` loops, `while`/`do-while`, `forEach`, `filter`, `map`, `reduce` |
 
-- `01_Basics`: Variable compilation types (`let`, `const`), operational scopes, fundamental data primitives, explicit control-flow statements, logical comparisons, and standard evaluation loops.
-- `02_ArraysObjects`: Composite collection engineering. Focuses on data array manipulations (index mapping, memory mutation, iteration operations) and Object layouts (key-value structures, nested schemas, dynamic property lookups).
-- `03_Function`: Structural functional isolation processes, scope boundaries, declarative parameters, argument processing pipelines, clear output return conditions, and modular execution principles.
+### Intermediate & Advanced
+| Lesson | Topics |
+|--------|--------|
+| **06_DOM** | DOM manipulation, event handling |
+| **07_Advance** | Promises, `setTimeout`, fetch API, event handling |
+| **08_ApiRequest** | Making API requests with `fetch` |
+| **09_OOPS** | Classes, inheritance, prototypes, getters/setters, `bind`, `call`, static properties |
+| **10_FunWithJs** | Lexical closures and fun examples |
 
-### 🚀 Future Dynamic Implementations (`projects/`)
+---
 
-- _(Under Active Development)_: Upcoming behavioral platforms leveraging structural programmatic scripts, asynchronous API data collection pipelines, real-time client state management, and direct interactive UI DOM modifications.
+## 🛠️ Projects
+
+Six mini-projects that put the lessons into practice:
+
+| # | Project | Description |
+|---|---------|-------------|
+| 1 | **colorChanger** | Change the page background color on button click |
+| 2 | **bmiCalculator** | Calculate Body Mass Index from user input |
+| 3 | **DigitalClock** | Live digital clock display |
+| 4 | **guessNumber** | Number guessing game with feedback |
+| 5 | **keyboard** | Detect and display keyboard events |
+| 6 | **unlimitedColors** | Generate random background colors continuously |
+
+---
+
+## ▶️ How to Run
+
+**HTML-based lessons & projects** — open the `index.html` file directly in your browser:
+
+```
+Lessons/06_DOM/index.html
+projects/1-colorChanger/index.html
+```
+
+**Standalone `.js` files** — run with Node.js:
+
+```bash
+node Lessons/01_Basics/filename.js
+```

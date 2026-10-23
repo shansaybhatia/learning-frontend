@@ -1,20 +1,36 @@
-# Core HTML Engineering Foundations 📑
+# 📑 HTML
 
-This module tracks targeted implementation patterns for mastering native HTML5 document structure, semantic node hierarchies, and accessible form design. By isolating HTML architecture from presentation styles and scripting layers, the focus is centered on programmatic document rendering and data layout systems.
+**Learning HTML fundamentals — from basic tags to forms and semantic markup.**
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+
+This folder contains structured HTML exercises and hands-on projects, progressing from simple elements to complete multi-page websites.
 
 ---
 
-## 📂 Module Map
+## 📚 Lessons
 
-### 📦 Lessons Breakdown
+| # | Lesson | What You'll Learn |
+|---|--------|-------------------|
+| 01 | **Basic** | HTML document structure and essential tags |
+| 02 | **HeadElement** | The `<head>` element, meta tags, and page metadata |
+| 03 | **TextBasics** | Headings, paragraphs, and text formatting elements |
+| 04 | **ListTypes** | Ordered, unordered, and description lists |
+| 05 | **Links** | Anchor tags, hyperlinks, and multi-page navigation |
+| 06 | **Images** | Embedding images and using `<figure>` / `<figcaption>` |
+| 07 | **SemanticTags** | Semantic HTML5 elements — `<header>`, `<main>`, `<section>`, `<article>`, `<aside>` |
+| 08 | **Tables** | Building tables with `<thead>`, `<tbody>`, `<tr>`, and `<td>` |
+| 09 | **Forms** | Form elements, fieldsets, labels, and input validation |
 
-- `01_Basic` & `02_HeadElement`: Document initialization configurations, page metadata, character encoding constraints, and structural boundaries.
-- `03_TextBasics`, `04_ListTypes`, & `05_Links`: Layout flows, hierarchical section headings, advanced data lists, and relative/absolute text anchoring protocols.
-- `06_Images` & `07_SemanticTags`: Accessible media management and search-optimized core semantic component wrapping (`<header>`, `<main>`, `<section>`, `<article>`, `<aside>`).
-- `08_Tables`: Structured formatting parameters using multi-dimensional explicit tables (`<table>`, `<thead>`, `<tbody>`, `<tr>`, `<td>`).
-- `09_Forms`: Data payload input architecture utilizing explicit `<fieldset>` constraints, access-friendly legends, validation regex matching, and structured parameters.
+## 🚀 Projects
 
-### 🚀 Production Implementations (`projects/`)
+| Project | Description |
+|---------|-------------|
+| [College Website](./projects/college-website/) | Multi-page UPES university site with 5 pages — home, courses, admission, faculty, and contact |
+| [Taco Shop](./projects/Taco_Shop/) | Multi-page taco restaurant site with 3 pages — home, store hours, and contact |
 
-- **college-website:** A multi-page university landing framework featuring advanced academic data matrices, cross-linked pathways, and complex nested student registration validation inputs.
-- **Taco_Shop:** A clean business landing layout optimizing graphic assets, content-flow boundaries, and pricing data lists.
+> Each project folder includes its own `readme.md` and preview screenshots.
+
+## 🖥️ How to Run
+
+Open any `.html` file directly in your browser — no build tools or servers needed.
