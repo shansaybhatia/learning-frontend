@@ -16,7 +16,7 @@ A responsive, multi-section portfolio and business-style website built with **Bo
 ![Website Preview](images/website-preview.png)
 
 <h2 align="center">
-  🔗 <a href="https://steady-bonbon-e59d79.netlify.app/">View Live Demo →</a>
+  🔗 <a href="https://sass-portfolio-demo.netlify.app/">View Live Demo →</a>
 </h2>
 
 ---

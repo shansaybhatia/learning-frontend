@@ -78,7 +78,7 @@ learning-frontend/
 | [**HTML**](./html/) | Lessons on document structure, semantics, and forms |
 | [**CSS**](./css/) | From basic styling to grid, flexbox, and animations |
 | [**JavaScript**](./javascript/) | Core language concepts and 6 hands-on projects |
-| [**Bootstrap + Sass**](./bootstrap-sass/) | A complete tutorial-based website — [view the live demo ↗](https://steady-bonbon-e59d79.netlify.app/) |
+| [**Bootstrap + Sass**](./bootstrap-sass/) | A complete tutorial-based website — [view the live demo ↗](https://sass-portfolio-demo.netlify.app/) |
 | [**React**](./react/) | 🚧 In Progress — exploring CRA and Vite setups |
 | [**TypeScript**](./typescript/) | Type fundamentals and a React + TS project |
 | [**Projects Hub**](./projects/) | Standalone apps — [To-Do List ↗](https://shansay-todo-list.netlify.app/) (more coming soon) |
@@ -91,7 +91,7 @@ learning-frontend/
   [Live Demo ↗](https://shansay-todo-list.netlify.app/)
 
 - **Bootstrap + Sass Website** — A fully styled, responsive site built with Bootstrap and Sass.
-  [Live Demo ↗](https://steady-bonbon-e59d79.netlify.app/)
+  [Live Demo ↗](https://sass-portfolio-demo.netlify.app/)
 
 - **College Website** — A multi-page site built first in [HTML](./html/projects/college-website/), then styled with [CSS](./css/projects/college-website/).
 
