@@ -8,7 +8,7 @@ A dedicated workspace for standalone frontend applications, practical implementa
 
 | Project | Stack | Live Demo | Description |
 |---|---|:---:|---|
-| [**To-Do List (Task Flow)**](./to-do-list/) | HTML5 · Sass · Vanilla JS (ES6 OOP) | [Live Site ↗](https://shansay-todo-list.netlify.app/) | An accessible, mobile-first task manager with persistent storage, dark mode, filter views, task progress tracking, and screen reader feedback. |
+| [**To-Do List (Task Flow)**](./to-do-list/) | HTML5 · Sass · Vanilla JS (ES6 OOP) | [Live Site ↗](https://shansay-todo-list.netlify.app/) | An accessible, mobile-first task manager with persistent storage, automatic completion removal, refined light design, and screen reader feedback. |
 
 ---
 

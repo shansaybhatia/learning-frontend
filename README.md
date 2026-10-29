@@ -87,7 +87,7 @@ learning-frontend/
 
 ## ⭐ Featured Projects
 
-- **Task Flow (To-Do List)** — An accessible, mobile-first task manager with persistent storage, dark mode, filter views, and screen reader announcements ([projects/to-do-list/](./projects/to-do-list/)).
+- **Task Flow (To-Do List)** — An accessible, mobile-first task manager with persistent storage, automatic completion removal, and screen reader announcements ([projects/to-do-list/](./projects/to-do-list/)).
   [Live Demo ↗](https://shansay-todo-list.netlify.app/)
 
 - **Bootstrap + Sass Website** — A fully styled, responsive site built with Bootstrap and Sass.

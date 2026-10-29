@@ -21,17 +21,15 @@ An accessible, mobile-first task management web application built with **Vanilla
 - **📱 Mobile-First & Responsive:** Crafted from the ground up for mobile devices, scaling fluidly across phone screens, tablets, and desktops using CSS custom properties and `clamp()`.
 - **💾 Persistent Data Storage:** Tasks are automatically saved to `localStorage` under `myTodoList`, preserving your to-do items across browser sessions and page reloads.
 - **♿ Screen Reader & a11y First:**
-  - Dedicated `aria-live="polite"` feedback region announcing item creation, completion status changes, and deletion events.
+  - Dedicated `aria-live="polite"` feedback region announcing item creation, completion status, and deletion events.
   - Descriptive `aria-label` tags on all interactive buttons and inputs.
   - Keyboard-accessible focus states (`:focus-visible`) with high-visibility focus rings.
   - Standard touch target sizes (minimum 44×44px) for touch devices.
-- **🌓 Dark & Light Theme Modes:** One-click theme switcher that automatically detects and honors user system color preferences (`prefers-color-scheme`) while remembering manual overrides.
-- **📊 Real-Time Progress Bar:** Visual completion meter dynamically calculating progress (`0%` to `100%`) with accessible `role="progressbar"` attributes.
-- **🔍 Filter Views:** Instant filtering by **All**, **Active**, and **Completed** tasks with individual count badges.
-- **⚡ Instant Deletion & Completion:**
-  - Check off items with custom animated checkboxes.
-  - Dedicated delete action on each task item for direct removal.
+- **⚡ Automatic Removal on Check:**
+  - Checking any task triggers an immediate visual strikethrough and smooth slide-out animation, automatically removing it from the list.
+  - Dedicated `✕` delete action on each task item for immediate deletion without checking.
   - "Clear All" with confirmation safeguard.
+- **🎨 Refined Modern Light Design:** Generous layout margins, elegant typography (Plus Jakarta Sans), soft card elevation, and clean visual separation between task entry and the TASKS section.
 - **🧩 OOP Architecture:** Clean separation of concerns using ES6 classes (`ToDoList` and `ToDoItem`).
 
 ---
@@ -45,7 +43,7 @@ An accessible, mobile-first task management web application built with **Vanilla
 - **Vanilla JavaScript (ES6 Modules):**
   - `todoitem.js` — Class model defining task data, completion state, and timestamps.
   - `todolist.js` — Class model encapsulating task collection operations, state changes, and metrics calculations.
-  - `main.js` — Controller coordinating DOM interactions, persistent storage sync, filter views, and assistive announcements.
+  - `main.js` — Controller coordinating DOM interactions, persistent storage sync, dynamic list rendering, and assistive announcements.
 
 ---
 
