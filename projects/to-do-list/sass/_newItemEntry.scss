@@ -2,8 +2,9 @@
 
 .newItemEntry {
   position: sticky;
-  top: 0.75rem;
+  top: 1rem;
   z-index: 10;
+  margin-bottom: 2.25rem; // Generous margin between add new item and TASKS section
 
   .itemEntryForm {
     width: 100%;
@@ -58,6 +59,8 @@
 
 @media (max-width: 24rem) {
   .newItemEntry {
+    margin-bottom: 1.75rem;
+
     .inputGroup {
       padding-left: 0.85rem;
     }
