@@ -1,42 +1,226 @@
-@use "base" as *;
+// Shared Components, Buttons, Header & Indicators
 
-.button {
-  width: auto;
-  min-width: 3rem;
-  min-height: 3rem;
-  padding: 0.5rem 0.75rem;
-  color: $surface-color;
-  background: $accent-color;
-  border: 0;
-  border-radius: 0.625rem;
-  outline: none;
+// Header & Branding
+.appHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.headerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+
+  .brandIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-hover));
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  }
+
+  .appTitle {
+    font-size: clamp(1.4rem, 4vw, 1.85rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--text-primary);
+    line-height: 1.2;
+
+    &:focus-visible {
+      outline: 2px solid var(--border-focus);
+      outline-offset: 4px;
+      border-radius: var(--radius-sm);
+    }
+  }
+
+  .appSubtitle {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+}
+
+.themeToggleBtn {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius-lg);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 1.15rem;
   cursor: pointer;
-  font: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+
+  &:hover {
+    background: var(--bg-surface-subtle);
+    border-color: var(--border-hover);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--border-focus);
+    outline-offset: 2px;
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Progress Card
+.progressCard {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.25rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  transition: all var(--transition-normal);
+
+  .progressMeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+
+    .progressLabel {
+      color: var(--text-secondary);
+    }
+
+    .progressPercent {
+      color: var(--accent-text);
+      background: var(--accent-subtle);
+      padding: 0.15rem 0.55rem;
+      border-radius: var(--radius-full);
+      font-size: 0.775rem;
+    }
+  }
+
+  .progressBarTrack {
+    width: 100%;
+    height: 0.5rem;
+    background: var(--bg-surface-subtle);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+  }
+
+  .progressBarFill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-hover));
+    border-radius: var(--radius-full);
+    transition: width 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+// Buttons
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  font-family: inherit;
+  font-size: 0.95rem;
   font-weight: 600;
-  transition:
-    background-color 150ms ease,
-    box-shadow 150ms ease,
-    transform 150ms ease;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  padding: 0.65rem 1.15rem;
+  min-height: 2.75rem;
+  line-height: 1;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+
+  &:focus-visible {
+    outline: 2px solid var(--border-focus);
+    outline-offset: 2px;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
 }
 
-.button:hover,
-.button:focus-visible {
-  background: $accent-hover-color;
-  box-shadow: 0 0.25rem 0.75rem rgb(47 58 54 / 18%);
+.buttonPrimary {
+  background: var(--accent-primary);
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.25);
+
+  &:hover {
+    background: var(--accent-hover);
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.35);
+    transform: translateY(-1px);
+  }
 }
 
-.button:focus-visible {
-  outline: 3px solid $focus-color;
-  outline-offset: 2px;
+.buttonGhost {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  font-size: 0.85rem;
+  padding: 0.45rem 0.85rem;
+  min-height: 2.25rem;
+
+  &:hover {
+    color: var(--danger-primary);
+    background: var(--danger-subtle);
+    border-color: var(--danger-primary);
+  }
 }
 
-.button:active {
-  transform: translateY(1px);
-}
+// Footer
+.appFooter {
+  text-align: center;
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem 0;
 
-@media only screen and (max-width: 22rem) {
-  .button {
-    min-width: 2.75rem;
-    padding: 0.5rem;
+  .footerLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.65rem;
+
+    a {
+      color: var(--accent-text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color var(--transition-fast);
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--border-focus);
+        outline-offset: 2px;
+        border-radius: var(--radius-sm);
+      }
+    }
   }
 }
