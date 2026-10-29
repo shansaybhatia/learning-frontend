@@ -6,6 +6,7 @@ export default class ToDoList {
   getList() {
     return this._list;
   }
+
   clearList() {
     this._list = [];
   }
@@ -22,5 +23,30 @@ export default class ToDoList {
         break;
       }
     }
+  }
+
+  getItemById(id) {
+    return this._list.find((item) => item.getId() == id) || null;
+  }
+
+  toggleItemCompletion(id) {
+    const item = this.getItemById(id);
+    if (item) {
+      item.setCompleted(!item.isCompleted());
+      return item.isCompleted();
+    }
+    return false;
+  }
+
+  clearCompleted() {
+    this._list = this._list.filter((item) => !item.isCompleted());
+  }
+
+  getActiveCount() {
+    return this._list.filter((item) => !item.isCompleted()).length;
+  }
+
+  getCompletedCount() {
+    return this._list.filter((item) => item.isCompleted()).length;
   }
 }
