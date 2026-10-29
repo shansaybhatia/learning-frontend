@@ -62,6 +62,9 @@ learning-frontend/
 ├── typescript/
 │   ├── src/                  # 13 TypeScript learning files
 │   └── reactTS/              # React + TypeScript + Vite project
+├── projects/                 # Standalone web applications
+│   ├── to-do-list/           # Task Flow app (deployed on Netlify)
+│   └── readme.md
 ├── .gitignore
 └── README.md
 ```
@@ -78,10 +81,14 @@ learning-frontend/
 | [**Bootstrap + Sass**](./bootstrap-sass/) | A complete tutorial-based website — [view the live demo ↗](https://steady-bonbon-e59d79.netlify.app/) |
 | [**React**](./react/) | 🚧 In Progress — exploring CRA and Vite setups |
 | [**TypeScript**](./typescript/) | Type fundamentals and a React + TS project |
+| [**Projects Hub**](./projects/) | Standalone apps — [To-Do List ↗](https://shansay-todo-list.netlify.app/) (more coming soon) |
 
 ---
 
 ## ⭐ Featured Projects
+
+- **Task Flow (To-Do List)** — An accessible, mobile-first task manager with persistent storage, dark mode, filter views, and screen reader announcements ([projects/to-do-list/](./projects/to-do-list/)).
+  [Live Demo ↗](https://shansay-todo-list.netlify.app/)
 
 - **Bootstrap + Sass Website** — A fully styled, responsive site built with Bootstrap and Sass.
   [Live Demo ↗](https://steady-bonbon-e59d79.netlify.app/)
