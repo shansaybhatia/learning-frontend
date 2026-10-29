@@ -1,0 +1,90 @@
+@use "base" as *;
+
+.listContainer {
+  min-height: 60vh;
+  padding: 0.75rem;
+
+  .listTitle {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    h1 {
+      font-size: clamp(1.25rem, 5vw, 1.75rem);
+      letter-spacing: -0.03em;
+    }
+
+    button {
+      width: auto;
+      min-height: 2.5rem;
+      padding: 0 0.75rem;
+      margin-bottom: 0.5rem;
+      background-color: $accent-hover-color;
+      font-size: 1rem;
+    }
+  }
+
+  hr {
+    margin: 0.75rem 0;
+    border: 0;
+    border-top: 1px solid $surface-border-color;
+  }
+
+  .confirmation {
+    position: absolute;
+    left: -10000px;
+  }
+}
+
+#listItems {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.item,
+.itme {
+  display: flex;
+  align-items: center;
+  min-height: 4rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.625rem;
+  transition:
+    background-color 150ms ease,
+    transform 150ms ease;
+
+  &:hover {
+    background: rgb(111 155 122 / 10%);
+    transform: translateX(0.15rem);
+  }
+
+  input[type="checkbox"] {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:focus-visible + label {
+    text-decoration: underline;
+  }
+
+  label {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked + label {
+    color: $muted-text-color;
+    text-decoration: line-through;
+  }
+}
+
+@include mp(48rem) {
+  .listContainer {
+    padding: 1rem;
+  }
+}

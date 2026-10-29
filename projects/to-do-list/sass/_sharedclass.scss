@@ -1,0 +1,42 @@
+@use "base" as *;
+
+.button {
+  width: auto;
+  min-width: 3rem;
+  min-height: 3rem;
+  padding: 0.5rem 0.75rem;
+  color: $surface-color;
+  background: $accent-color;
+  border: 0;
+  border-radius: 0.625rem;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  transition:
+    background-color 150ms ease,
+    box-shadow 150ms ease,
+    transform 150ms ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  background: $accent-hover-color;
+  box-shadow: 0 0.25rem 0.75rem rgb(47 58 54 / 18%);
+}
+
+.button:focus-visible {
+  outline: 3px solid $focus-color;
+  outline-offset: 2px;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+@media only screen and (max-width: 22rem) {
+  .button {
+    min-width: 2.75rem;
+    padding: 0.5rem;
+  }
+}

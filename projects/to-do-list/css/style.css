@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  min-width: 20rem;
+  min-height: 100vh;
+  padding: clamp(0.75rem, 3vw, 2rem);
+  color: #2f3a36;
+  background: #f5f1ea;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+
+section {
+  width: min(100%, 42rem);
+  margin: 0 auto 1rem;
+  padding: clamp(0.75rem, 3vw, 1.5rem);
+  background: #fffdf9;
+  border: 1px solid #e3ded5;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(47, 58, 54, 0.12);
+}
+
+@media only screen and (max-width: 22rem) {
+  body {
+    padding: 0.5rem;
+  }
+  section {
+    border-radius: 0.75rem;
+  }
+}
+.button {
+  width: auto;
+  min-width: 3rem;
+  min-height: 3rem;
+  padding: 0.5rem 0.75rem;
+  color: #fffdf9;
+  background: #557d62;
+  border: 0;
+  border-radius: 0.625rem;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  transition: background-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  background: #466a52;
+  box-shadow: 0 0.25rem 0.75rem rgba(47, 58, 54, 0.18);
+}
+
+.button:focus-visible {
+  outline: 3px solid #9ab8a3;
+  outline-offset: 2px;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+@media only screen and (max-width: 22rem) {
+  .button {
+    min-width: 2.75rem;
+    padding: 0.5rem;
+  }
+}
+.newItemEntry {
+  position: sticky;
+  top: 0;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  z-index: 1;
+}
+.newItemEntry form {
+  display: flex;
+  align-items: stretch;
+  gap: 0.75rem;
+}
+.newItemEntry label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.newItemEntry input[type=text] {
+  flex: 1;
+  min-width: 0;
+  padding: 0.75rem;
+  color: inherit;
+  font: inherit;
+  font-size: 1.25rem;
+  background: #fffdf9;
+  border: 2px solid #d9d4ca;
+  border-radius: 0.625rem;
+  outline: none;
+  transition: box-shadow 150ms ease;
+}
+.newItemEntry input[type=text]:hover,
+.newItemEntry input[type=text]:focus {
+  border-color: #557d62;
+  box-shadow: 0 0.25rem 0.75rem rgba(47, 58, 54, 0.12);
+}
+.newItemEntry button {
+  min-width: 3rem;
+  font-size: 1.25rem;
+}
+@media only screen and (max-width: 22rem) {
+  .newItemEntry form {
+    gap: 0.5rem;
+  }
+  .newItemEntry input[type=text] {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  .newItemEntry button {
+    font-size: 1.5rem;
+  }
+}
+
+.listContainer {
+  min-height: 60vh;
+  padding: 0.75rem;
+}
+.listContainer .listTitle {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.listContainer .listTitle h1 {
+  font-size: clamp(1.25rem, 5vw, 1.75rem);
+  letter-spacing: -0.03em;
+}
+.listContainer .listTitle button {
+  width: auto;
+  min-height: 2.5rem;
+  padding: 0 0.75rem;
+  margin-bottom: 0.5rem;
+  background-color: #466a52;
+  font-size: 1rem;
+}
+.listContainer hr {
+  margin: 0.75rem 0;
+  border: 0;
+  border-top: 1px solid #e3ded5;
+}
+.listContainer .confirmation {
+  position: absolute;
+  left: -10000px;
+}
+
+#listItems {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.item,
+.itme {
+  display: flex;
+  align-items: center;
+  min-height: 4rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.625rem;
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+.item:hover,
+.itme:hover {
+  background: rgba(111, 155, 122, 0.1);
+  transform: translateX(0.15rem);
+}
+.item input[type=checkbox],
+.itme input[type=checkbox] {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.item input[type=checkbox]:focus-visible + label,
+.itme input[type=checkbox]:focus-visible + label {
+  text-decoration: underline;
+}
+.item label,
+.itme label {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.item input[type=checkbox]:checked + label,
+.itme input[type=checkbox]:checked + label {
+  color: #8b948e;
+  text-decoration: line-through;
+}
+
+@media only screen and (min-width: 48rem) {
+  .listContainer {
+    padding: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
