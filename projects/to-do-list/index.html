@@ -4,45 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO DO LIST</title>
+    <meta name="description"
+        content="A modern, accessible, mobile-first To-Do List application with persistent storage, filter views, and screen reader support.">
+    <title>To-Do List | Task Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" type="module"></script>
 </head>
 
 <body>
-    <main>
-        <section class="newItemEntry">
-            <form id="itemEntryForm" action="" class="itemEntryForm">
-                <label for="newItem">Enter a new to do Item</label>
-                <input type="text" id="newItem" size="40" autocomplete="off" placeholder="Add Item" tabindex="0">
-                <button id="addItem" class="button" title="Add new item" aria-label="Add new item to list"
-                    tabindex="0">+</button>
-            </form>
-        </section>
-        <section class="listContainer">
-            <div class="listTitle">
-                <h1 tabindex="0">TO DO LIST</h1>
-                <button id="clearItems" class="button" title="Clear the list"
-                    aria-label="Remove all items from the list" tabindex="0">clear</button>
+    <div class="appWrapper">
+        <header class="appHeader">
+            <div class="headerTop">
+                <div class="brand">
+                    <span class="brandIcon" aria-hidden="true">✓</span>
+                    <div>
+                        <h1 class="appTitle" tabindex="0">Task Flow</h1>
+                        <p class="appSubtitle" id="currentDate"></p>
+                    </div>
+                </div>
+                <button id="themeToggle" class="themeToggleBtn" type="button" title="Toggle dark mode"
+                    aria-label="Toggle between dark and light mode" tabindex="0">
+                    <span class="themeIcon" aria-hidden="true">🌙</span>
+                </button>
             </div>
-            <hr>
-            <div id="listItems">
-                <div class="item">
-                    <input type="checkbox" id="1" tabindex="0">
-                    <label for="1">eat</label>
+
+            <!-- Task Progress Indicator -->
+            <div class="progressCard" aria-label="Task completion progress">
+                <div class="progressMeta">
+                    <span id="progressLabel" class="progressLabel">Task Progress</span>
+                    <span id="progressPercent" class="progressPercent">0%</span>
                 </div>
-                <div class="item">
-                    <input type="checkbox" id="2" tabindex="0">
-                    <label for="2">code</label>
-                </div>
-                <div class="item">
-                    <input type="checkbox" id="3" tabindex="0">
-                    <label for="3">sleep</label>
+                <div class="progressBarTrack" role="progressbar" id="progressBar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100" aria-labelledby="progressLabel">
+                    <div id="progressBarFill" class="progressBarFill"></div>
                 </div>
             </div>
-            <p id="confirmation" class="confirmation" aria-live="assertive"></p>
-        </section>
-    </main>
+        </header>
+
+        <main id="mainContent">
+            <!-- New Item Entry Form -->
+            <section class="newItemEntry" aria-labelledby="newItemLabel">
+                <form id="itemEntryForm" class="itemEntryForm" novalidate>
+                    <label id="newItemLabel" for="newItem" class="sr-only">Enter a new to do Item</label>
+                    <div class="inputGroup">
+                        <input type="text" id="newItem" name="newItem" size="40" autocomplete="off"
+                            placeholder="Add a new task..." maxlength="120" tabindex="0" required>
+                        <button id="addItem" class="button buttonPrimary" type="submit" title="Add new item"
+                            aria-label="Add new item to list" tabindex="0">
+                            <span class="btnIcon" aria-hidden="true">+</span>
+                            <span class="btnText">Add</span>
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- List Container -->
+            <section class="listContainer" aria-labelledby="listHeading">
+                <div class="listHeader">
+                    <div class="listTitleGroup">
+                        <h2 id="listHeading" class="listHeading" tabindex="0">Tasks</h2>
+                        <span id="taskCounter" class="taskBadge" aria-live="polite">0 tasks</span>
+                    </div>
+
+                    <div class="listActions">
+                        <button id="clearItems" class="button buttonGhost" type="button" title="Clear all tasks"
+                            aria-label="Remove all items from the list" tabindex="0">
+                            <span class="btnIcon" aria-hidden="true">🗑</span>
+                            <span>Clear All</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Filters -->
+                <nav class="filterNav" aria-label="Filter tasks">
+                    <button type="button" class="filterBtn active" data-filter="all" aria-pressed="true" tabindex="0">
+                        All <span id="countAll" class="filterBadge">0</span>
+                    </button>
+                    <button type="button" class="filterBtn" data-filter="active" aria-pressed="false" tabindex="0">
+                        Active <span id="countActive" class="filterBadge">0</span>
+                    </button>
+                    <button type="button" class="filterBtn" data-filter="completed" aria-pressed="false" tabindex="0">
+                        Completed <span id="countCompleted" class="filterBadge">0</span>
+                    </button>
+                </nav>
+
+                <hr class="divider">
+
+                <!-- Dynamic Items Container -->
+                <div id="listItems" class="listItems" role="list" aria-label="To-do items list">
+                    <!-- Populated dynamically via main.js -->
+                </div>
+
+                <!-- Empty State -->
+                <div id="emptyState" class="emptyState" hidden>
+                    <div class="emptyIcon" aria-hidden="true">📝</div>
+                    <p class="emptyTitle">No tasks found</p>
+                    <p class="emptySubtitle">Add a task above to keep your momentum going.</p>
+                </div>
+
+                <!-- Screen Reader Live Feedback Region -->
+                <p id="confirmation" class="confirmation sr-only" aria-live="polite" aria-atomic="true"></p>
+            </section>
+        </main>
+
+        <footer class="appFooter">
+            <p>Built with Semantic HTML, Modern Sass & Vanilla JavaScript</p>
+            <p class="footerLinks">
+                <a href="https://github.com/shansaybhatia/learning-frontend" target="_blank" rel="noopener noreferrer">
+                    GitHub Repository
+                </a>
+                <span>•</span>
+                <a href="https://shansay-todo-list.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    Live Demo
+                </a>
+            </p>
+        </footer>
+    </div>
 </body>
 
 </html>
